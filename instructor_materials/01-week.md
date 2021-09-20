@@ -43,7 +43,7 @@ theme: Ostrich, 1
 
 - [Drexel Learn](https://learn.dcollege.net/webapps/login/)
 - [Course Repository](https://github.com/mrpaulphan/idm232)
-- [syllabus](./_docs/../../docs/syllabus.md)
+- [syllabus](https://github.com/mrpaulphan/idm232/blob/master/docs/syllabus.md)
 
 ^ All course information including syllabus, overview and assignments will be managed through Drexel's Blackboard (BBLearn) system. Let's log in and review the syllabus and course information now.
 
@@ -72,6 +72,7 @@ theme: Ostrich, 1
 - Version 4: 2000
 - Version 5: 2004
 - Version 7: 2015
+- Version 8: 2020
 
 ^ A full history is available online.
 
@@ -107,9 +108,12 @@ theme: Ostrich, 1
 ^ (click) We'll need a text editor, and obviously (click) a browser.
 
 ---
+## How Does a server side work?
+![inline](./../assets/images/server_side.png)
+
+---
 
 ## Apache, MySql, PHP Apps
-
 - LAMP
 - MAMP
 - WAMP
@@ -133,7 +137,7 @@ $$ XAMP = (L|M|W)+Apache+MySQL+PHP $$
 
 ## MAMP Installation
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/mamp.png)
+![inline](./../assets/images/mamp.png)
 
 [https://www.mamp.info/en/](https://www.mamp.info/en/)
 

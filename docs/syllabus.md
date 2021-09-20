@@ -38,7 +38,7 @@ By the end of the course, student will be able to
 | Week | Topic |
 | ---- | ----- |
 | Week 1 | Introduction & Basic Syntax |
-| Week 2 | Variables & Control Structures |
+<!-- | Week 2 | Variables & Control Structures |
 | Week 3 | Building with PHP |
 | Week 4 | Alpha Review |
 | Week 5 | MySQL Basics |
@@ -46,7 +46,7 @@ By the end of the course, student will be able to
 | Week 7 | Building A Project |
 | Week 8 | Beta Review |
 | Week 9 | Working with Forms |
-| Week 10 | Open Lab |
+| Week 10 | Open Lab | -->
 
 ## Grading
 
