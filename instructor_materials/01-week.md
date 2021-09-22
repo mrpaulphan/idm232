@@ -25,8 +25,7 @@ theme: Ostrich, 1
 - Email: [paul.phan@drexel.edu](mailto:paul.phan@drexel.edu)
 
 ---
-![inline](./../assets/images/hc_logo.png)
-## Technical Lead / Full Stack Developer @HappyCog
+![inline fill](./../assets/images/drexel.png)![inline fill](./../assets/images/baseball.png)
 
 ---
 ![inline](./../assets/images/hc_logo.png)
