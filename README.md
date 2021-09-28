@@ -7,3 +7,7 @@ All assignments are outlined and should be submitted on [Drexel Blackboard](http
 - [@philsinatra](https://github.com/philsinatra)
 - [@jervo](https://github.com/jervo)
 - [@findes](https://github.com/findes)
+
+## Links 
+- Schedule a meeting: [calendar](https://calendly.com/mr-paulphan)
+- Email: [paul.phan@drexel.edu](mailto:paul.phan@drexel.edu)
