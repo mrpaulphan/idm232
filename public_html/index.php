@@ -8,21 +8,10 @@
   <title>IDM 232</title>
 </head>
 <body>
-<h1>Heading 1</h1>
-<!-- COMMENT HERE -->
-<?php
 
-$postHeading = 'Paul Phan Started at Drexel';
-?>
+<div class="container">
 
-<h1><?php echo $postHeading; ?></h1>
-
-
-<script>
-var person = 'Paul';
-var firstName = 'Paul';
-console.log(person + ' hey whats up');
-
-</script>
+<h1>Slides</h1>
+</div>
 </body>
 </html>
