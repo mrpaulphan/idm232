@@ -21,8 +21,10 @@
   <pre class="solution">
     <?php
     //Your solution here.
-
+      $text = 'I love PHP scripting!';
+      echo $text;
     // end your solution
+
     ?>
   </pre>
 
@@ -41,7 +43,8 @@
   <pre class="solution">
     <?php
     // Your solution here.
-
+    $text = 'The quick brown fox jumped.';
+    echo strtoupper($text);
     // end your solution
     ?>
     </pre>
@@ -61,6 +64,8 @@
   <pre class="solution">
       <?php
       $string = "The quick brown fox jumped.";
+
+      echo str_replace('quick brown fox jumped', 'lazy black fox slept', $string);
       // Your solution here.
 
       // end your solution
@@ -77,6 +82,14 @@
 <pre class="solution">
 <?php
   // Your solution here.
+  $num1 = 3;
+  $num2 = 6;
+  $num3 = 5;
+  $num4 = 4;
+  $num5 = 3;
+  $num6 = 7;
+
+  echo $num1 + $num2 * ($num3 + $num4) / $num5 - $num6;
 
   // end your solution
 ?>
@@ -88,11 +101,13 @@
     $numbers = array(1,6,3,8,2,5);
   </pre>
   <p>Use PHP to sort the array values into order and print the sorted array to the screen.</p>
-  
+  <p>Use var_dump($numbers); to display your results</p>
   <pre class="solution">
   <?php
     $numbers = array(1,6,3,8,2,5);
+    sort($numbers);
     // Your solution here.
+    var_dump($numbers);
   
     // end your solution
   ?>
