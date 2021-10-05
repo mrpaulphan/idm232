@@ -1,206 +1,174 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/global/header.php'; ?>
 
 <div class="container">
-  <h1>Data Types and Arrays</h1>
-  <h2>PHP</h2>
-  <?php echo 'inline PHP'; ?>
-  <h1><?php echo 'Heading'; ?></h1>
-  <p class="<?php echo 'h1'; ?>">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo velit possimus soluta saepe in nisi ut. Possimus laborum blanditiis recusandae commodi delectus ducimus perferendis autem necessitatibus maxime suscipit, qui expedita.</p>
-  <?php echo '<p>Hi this is a p tag</p>'; ?>
-  <hr>
-  <h2>Casing</h2>
-  <p>Camel Case</p>
-  <?php
-    $fullName = 'Paul Phan';
-  ?>
-  <p>Under scores</p>
-  <?php
-    $full_name = 'Paul Phan';
-  ?>
-  <p>Kebab Case</p>
-  <?php
-    // $full-name = 'Paul Phan';
-  ?>
+<?php
 
-  <h2>Variables</h2>
-  <p>Numbers</p>
-  <?php 
-    $age = 18;
-  ?>
-  <p>String</p>
-  <?php
-    $age = 'This can be any type of text';
-    $age = '<h1 clas="h1">This can be any type of text<h1>';
-  ?>
-  <p>Quotes</p>
-  <?php
-  $extraText = 'this is extra text';
-  $var1 = 'Var 1 ' . $extraText ;
-  $var2 = "Var 2 $extraText";
+  // Variables
+  $fullName = 'Paul Jasper';
+  echo $fullName;
 
-  // echo $var1;
-  // echo $var2;
+  echo '</br>';
 
-?>
+  $fullName = 'Koda Phan';
+  echo $fullName;
 
-<p>Quotes</p>
-  <?php
-  $extraText = 'this is extra text';
-  $var1 = 'Var 1 ' . $extraText ;
-  $var2 = "Var 2 $extraText";
+  $string = 'Paul Phan';
+  $number = 10;
+  $number = 20;
+  $number = 20.18;
+  $bool = true;
+  $bool = false;
+
+  // Type of quotes
+  $string = 'This is cool';
+  $string2 = "This is cool";
+
+  $email = 'paul@drexel.edu';
+
+  $phrase = 'This Persons email is ' . $email;
+  $phrase2 = "This Persons email is $email";
+
+  echo '</br>';
+  echo $phrase;
+  echo '</br>';
+  echo $phrase2;
 
   $firstName = 'Paul';
   $lastName = 'Phan';
+  echo '</br>';
 
-  // $fullName = $firstName . ' ' . $lastName;
-  // echo $fullName;
-
-  $fullName .= $firstName;
-  // Paul
-  $fullName .= $lastName;
+  echo $firstName . ' ' . $lastName;
   // Paul Phan
 
+  // PAUL@DREXEL.EDU
+  // PaulPhan@drexel.edu
+  // PaULPhaN@drexel.
   
+  $email = 'PaulPhanPOOL@mrpaulphan.com';
+  echo '</br>';
+  echo  $email;
+  echo '</br>';
 
-
-
-  // echo $var1;
-  // echo $var2;
 
 ?>
-
-<?php
-  $email = 'PauL.PhAN@DREXELEDU';
-?>
-
-Normal: <?php echo $email; ?>;
-<br>
-Lowercase: <?php echo strtolower($email); ?><br>
-Uppercase: <?php echo strtoupper($email); ?><br>
-
-<?php
-  $dogName = 'koda';
-?>
-Uppercase first: <?php echo ucfirst($dogName); ?><br>
-
-<?php
-  $phrase = 'my dad forgot to pick me up.';
-?>
-Uppercase words: <?php echo ucwords($phrase); ?>
-
-<?php
-  $password = 'pas';
-?>
-Length: <?php echo strlen($password); ?>
-
-<?php
-  $email = 'paul.phan@drexel.edu';
-  // To find the word drexel in the email.
-?>
-<br>
-Find: <?php echo strstr($email, 'drexel'); ?>
-
-<?php
-  $email = 'paul.phan@drexel.edu';
-// To find the word drexel and you want to replace it with penn.edu
-?>
-<br>
-Replace: <?php echo str_replace('drexel.edu', 'penn.edu', $email); ?>
-
- <br>
-<?php
-  $favColors = 'My favorite color is blue and sometimes green.';
-  echo "Find position: " . strpos($favColors, "blue");
-?>
-<br>
-
-<?php
-$total = 100;
-$tip = '20';
-// Convert string to Int
-$tipInt = intval($tip);
-// returns 20 not '20'
-?>
-
-Basic Math: Total = <?php echo $total + $tipInt ?>
-<br>
-Basic Math: Subtract <?php echo $total - $tipInt ?>
-<br>
-Basic Math: Division <?php echo $total / $tipInt ?>
-<br>
-Basic Math: Multiply <?php echo $total * $tipInt ?>
-
-PEDMAS
-<?php
-$num1 = 2;
-$num2 = 30;
-$num3 = 5;
-$num4 = 1;
-?>
-Basic Math: PEDMAS <?php echo $num1 + $num3 * $num4 - $num2 ?>
-<?php
-$num1 = 2.29;
-?>
-<br>
-Basic Math: Round <?php echo round($num1, 2) ?>
-<br>
-<?php
-$integer = 3;
-$float = 3.14;
-
-// echo "Is $integer integer? " . is_int($integer);
-echo "Is $float float? " . is_float($float);
-?>
-
-
-
-  <h2>Math</h2>
-  <h2>Arrays & Associative Arrays</h2>
+  Lower: <?php echo strtolower($email); ?>
   <br>
-  <?php
-    // $colors = array();
-    // // PHP 5.4
-    // $colors = [];
+  Uppercase: <?php echo strtoupper($email); ?>
+  <br>
+  Uppercase first: <?php echo ucfirst($email); ?><br>
+  Uppercase words: <?php echo ucwords($email); ?>
+  <br>
+  <br>
 
-    // Example of an array
-    $colors = ['red', 'blue', 'green', 'pink'];
-    echo '<pre>';
-    var_dump($colors);
-    echo '<pre>';
+  <?php 
 
-    // can be mixed
-    $arrayExample = ['red', 2, 2.3, 'pink'];
+    $bodyText = 'My name is John Doe. I like Drexel';
+    echo $bodyText;
+    echo '</br>';
 
-    // Return Green
-    echo $colors[2];
-    echo '<br>';
-    // Return Blue
-    echo $colors[1];
-    echo '<br>';
-    // Return Red
-    echo $colors[0];
 
-    echo '<br>';
-    echo '<br>';
-    echo '<br>';
+  ?>
+  Replace by string: <?php echo str_replace('John Doe', 'Kevin Murphy', $bodyText); ?>
+    <br>
 
-    $person = [
+    <?php 
+    // Math
+
+    $total = 100;
+    $tip = 20;
+    $finalPrice = $total / $tip;
+
+    echo $finalPrice;
+    echo '</br>';
+    // PEDMAS
+
+    $num1 = 10;
+    $num2 = 20;
+    $num3 = 50;
+    $num4 = 5;
+
+    $total = ($num1 + $num2) * $num3 - $num4;
+    
+    echo  $total;
+    echo '</br>';
+
+    $count = 10;
+    echo $count;
+    echo '</br>';
+
+    $count--;
+    echo $count;
+    echo '</br>';
+
+    $count++;
+    echo $count;
+    echo '</br>';
+
+    // Rounding
+    $pie = 3.1493849030239200293202023;
+
+    echo round($pie, 2);
+
+    // Arrays & associative arrays
+    $array = array();
+
+    // PHP 5.4 +
+    $array = [];
+
+    $students = ['ally', 'casey', 'megan', 'john', 'Amy'];
+    echo '</br>';
+    echo '</br>';
+    echo '</br>';
+
+    print_r($students);
+
+    echo '</br>';
+
+    echo $students[1];
+    echo '</br>';
+    echo $students[4];
+    echo '</br>';
+
+    $students = [
+      'firstPerson' => 'ally',
+      'secondPerson' => 'casey',
+      2 =>'megan',
+      'john',
+      'Amy'
+    ];
+
+  echo '<pre>';
+    var_dump(  $students );
+  echo '</pre>';
+
+
+
+
+    echo '</br>';
+    echo '</br>';
+    echo '</br>';
+    echo '</br>';
+
+    $customer = [
       'firstName' => 'Paul',
       'lastName' => 'Phan',
-      'email' => 'paul.phan@drexel.edu',
+      'email' => 'paul@paulphan.com',
+      'phone' => '232-233-4233',
     ];
 
     echo '<pre>';
-    var_dump($person);
-    echo '<pre>';
-
-    echo '<br>';
-    echo $person['email'];
-
-  ?>
-  
+      var_dump( $customer );
+    echo '</pre>';
 
 
-  <h2><a href="/exercises/02/index.php">Exercise</a></h2>
+    echo '</br>';
+    echo '</br>';
+    echo 'Welcome ' . $customer['firstName'] . ' your email is ' . $customer['email'];
+    echo '</br>';
+
+    ?>
+    
+
+
 </div>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/global/footer.php'; ?>
