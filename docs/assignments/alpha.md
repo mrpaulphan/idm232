@@ -13,11 +13,17 @@ Design and create an HTML based version of your final project pages. The functio
 
 You do not have to create every single page for the entire final project. Instead you should be focused on building at least one template for every style of page your final project will need. Examples:
 
-- home screen
-- filter results screen
-- no results found screen
-- single recipe screen
-- help screen
+User Screens
+- Home Screen
+- Category listing screen
+- Recipe Detail Screen
+- Search Results
+
+Admin Screens
+-  View all Recipes Screen
+-  Add Recipe Screen
+-  Edit Recipe Screen
+-  Delete Recipe Screen
 
 ## Submitting the Assignment
 
