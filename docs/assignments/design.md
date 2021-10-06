@@ -1,1 +1,29 @@
-TBA
+# IDM232 Alpha
+
+This page describes an assignment for this course. Due dates and submissions are handled through [Drexel Blackboard](https://learn.dcollege.net/).
+
+## Alpha Description
+
+Create Designs for your final project pages. 
+
+You do not have to create every single page for the entire final project. Instead you should be focused on building at least one template for every style of page your final project will need. Examples:
+
+User Screens
+- Home Screen
+- Category listing screen
+- Recipe Detail Screen
+- Search Results
+
+Admin Screens
+-  View all Recipes Screen
+-  Add Recipe Screen
+-  Edit Recipe Screen
+-  Delete Recipe Screen
+
+## Submitting the Assignment
+
+Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Alpha** - Assignment Submission:
+
+1. A zip file submited on learn 
+2. 
+**Late submissions receive zero points.**
