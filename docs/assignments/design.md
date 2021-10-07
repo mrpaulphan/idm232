@@ -16,9 +16,7 @@ User Screens
 
 Admin Screens
 -  View all Recipes Screen
--  Add Recipe Screen
--  Edit Recipe Screen
--  Delete Recipe Screen
+-  Add / Edit Recipe Screen
 
 ## Submitting the Assignment
 
