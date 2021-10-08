@@ -22,6 +22,7 @@ Admin Screens
 
 Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Alpha** - Assignment Submission:
 
-1. A zip file submited on learn 
-2. 
+1. All designs should be in an image or PDF format (.png, .jpg, .pdf, .jpeg). 
+2. Export and zip up all of the files.
+3. 
 **Late submissions receive zero points.**
