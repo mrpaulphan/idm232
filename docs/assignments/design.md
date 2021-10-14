@@ -24,5 +24,5 @@ Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) u
 
 1. All designs should be in an image or PDF format (.png, .jpg, .pdf, .jpeg). 
 2. Export and zip up all of the files.
-3. 
+
 **Late submissions receive zero points.**
