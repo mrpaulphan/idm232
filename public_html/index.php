@@ -1,5 +1,8 @@
-<?php include 'global/header.php'   ?>
+<?php
+$page_title = 'Home';
+include_once __DIR__ .'/global/header.php';
+?>
 <div class="container">
     <h1>Home</h1>
 </div>
-<?php include 'global/footer.php'   ?>
+<?php include_once __DIR__ .'/global/footer.php';   ?>

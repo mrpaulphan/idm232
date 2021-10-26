@@ -1,5 +1,10 @@
 <?php
-$pageTitle = isset($pageTitle) ? $pageTitle . ' | IDM 232' : 'IDM 232';
+// Set Page Title
+if (isset($page_title)) {
+    $page_title = $page_title . ' | IDM 232';
+} else {
+    $page_title = 'IDM 232';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +13,6 @@ $pageTitle = isset($pageTitle) ? $pageTitle . ' | IDM 232' : 'IDM 232';
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="/dist/styles/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $pageTitle; ?></title>
+  <title><?php echo $page_title; ?></title>
 </head>
 <body>
