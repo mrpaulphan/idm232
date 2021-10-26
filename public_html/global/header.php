@@ -1,4 +1,7 @@
 <?php
+require_once __DIR__ . '/../config.php';
+require_once __DIR__ . '/../includes/database.php';
+
 // Set Page Title
 if (isset($page_title)) {
     $page_title = $page_title . ' | IDM 232';
