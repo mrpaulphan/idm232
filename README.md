@@ -11,3 +11,7 @@ All assignments are outlined and should be submitted on [Drexel Blackboard](http
 ## Links 
 - Schedule a meeting: [calendar](https://calendly.com/mr-paulphan)
 - Email: [paul.phan@drexel.edu](mailto:paul.phan@drexel.edu)
+
+## Getting Started
+- copy the`config.example.php`file and rename it `config.php`
+- Fill out that information for your specific environment. 
