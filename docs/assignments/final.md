@@ -7,7 +7,6 @@ This page describes an assignment for this course. Due dates and submissions are
   - [Project Asset Files](#project-asset-files)
   - [Project Requirements](#project-requirements)
   - [Grading Criteria](#grading-criteria)
-  - [Extra Credit](#extra-credit)
   - [Screen Capture Video](#screen-capture-video)
   - [Submitting the Assignment](#submitting-the-assignment)
 
@@ -40,12 +39,26 @@ Additional techniques, including, but not limited to the following may be used a
 
 The following outline lists the requirements for successfully completing the final project.
 
-- All projects must be programmed from scratch using PHP/MySQL as the primary programming and data manipulation languages. Use of online content management systems (Wordpress, WIX, Squarespace etc.) is completely prohibited.
-- All projects must be self hosted.
-- Source code must be tracked throughout the duration of the project using GitHub.
-- All data must be stored and served from a MySQL database, running on the live web server.
-- Projects must include all of the provided recipes, not a subset.
-- All sites must be fully responsive, from a range of small to large (smart phone to desktop monitor).
+- [ ] All projects must be programmed from scratch using PHP/MySQL as the primary programming and data manipulation languages. Use of online content management systems (Wordpress, WIX, Squarespace etc.) is completely prohibited.
+- [ ] All projects must be self hosted.
+- [ ] Source code must be tracked throughout the duration of the project using GitHub.
+- [ ] All data must be stored and served from a MySQL database, running on the live web server.
+- [ ] Projects must include all of the provided recipes, not a subset.
+- [ ] All sites must be fully responsive, from a range of small to large (smart phone to desktop monitor).
+
+Pages
+**User Screens**
+- [ ] Home Screen
+- [ ] Category listing screen
+- [ ] Recipe Detail Screen
+- [ ] Search Results
+
+**Admin Pages**
+- [ ] Recipe Listing Page
+- [ ] Create Recipe functionality/screen
+- [ ] Read Recipe functionality/screen (List of all recipes)
+- [ ] Edit Recipe functionality/screen
+- [ ] Delete Recipe functionality/screen
 
 ## Grading Criteria
 
@@ -66,10 +79,6 @@ Your final project represents the culmination of ten weeks. This project will be
     - Is the project built in an optimized fashion? Will future maintenance be minimal?
     - Is the database well structured and easy to manipulate?
     - Is the application properly templated, with minimal repetition of code?
-
-## Extra Credit
-
-In addition to the front end user interface, develop a content management system for the site, where an admin has the ability to add/edit/remove recipes to the site, all from a web interface.
 
 ## Screen Capture Video
 

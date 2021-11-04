@@ -6,9 +6,9 @@ This page describes an assignment for this course. Due dates and submissions are
 
 Create a PHP based version of your final project pages. The functioning prototype:
 
-- must be responsive (small to large)
-- must PHP as the primary scripting language
-- must include data driven from a MySQL database
+- Must be responsive (small to large)
+- Must PHP as the primary scripting language
+- Must include data driven from a MySQL database
 - Admin Pages
   - Recipe Listing Page
   - Create Recipe functionality/screen
