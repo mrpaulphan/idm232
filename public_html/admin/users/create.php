@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 
     // Build Query
     $query = 'INSERT INTO users (role, first_name, last_name, email, phone, password, date_created, date_updated)';
-    $query .= "VALUES ('{$role}', '{$first_name}} ', '{$last_name}', '{$email}', '{$phone}', '{$password}', '{$current_date}', '{$current_date}')";
+    $query .= "VALUES ('{$role}', '{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$password}', '{$current_date}', '{$current_date}')";
 
     // Execute Query
     $results = mysqli_query($db_connection, $query);

@@ -3,8 +3,12 @@ $page_title = 'Create User';
 include_once $_SERVER['DOCUMENT_ROOT'] . '/global/header.php';
 
 if (isset($_POST['update'])) {
-    //  Parse Data
     $user_id = $_POST['user_id'];
+    // Make sure GET ID == post ID
+    if ($_GET['id'] != $user_id) {
+        redirectTo('/admin/users/edit.php?id=' . $_GET['id'] . '&error=User ID does not match current user.');
+    }
+    //  Parse Data
     $first_name = mysqli_real_escape_string($db_connection, $_POST['first_name']);
     $last_name = mysqli_real_escape_string($db_connection, $_POST['last_name']);
     $email = mysqli_real_escape_string($db_connection, $_POST['email']);
@@ -14,8 +18,8 @@ if (isset($_POST['update'])) {
     $current_date = getFormattedDateTime();
 
     // Build Query
-    $query = 'UPDATE users SET ';
-
+    $query = 'UPDATE users ';
+    $query .= 'SET ';
     $query .= "first_name = '{$first_name}', ";
     $query .= "last_name = '{$last_name}', ";
     $query .= "email = '{$email}', ";
@@ -23,10 +27,11 @@ if (isset($_POST['update'])) {
     $query .= "role = '{$role}', ";
     $query .= "date_updated = '{$current_date}' ";
     $query .= "WHERE id = {$user_id}";
+
     // Execute Query
     $results = mysqli_query($db_connection, $query);
 
-    if ($results) {
+    if ($results && $results->num_rows > 0) {
         // Success
         redirectTo('/admin/users?success=User Updated');
     } else {

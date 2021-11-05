@@ -13,7 +13,7 @@ function redirectTo($url)
 
 /**
  * return date and time in the correct
- * mysql datetime format
+ * mysqi 'datetime' format
  *
  * @return string
  */
@@ -22,6 +22,11 @@ function getFormattedDateTime()
     return  date('Y-m-d H:i:s');
 }
 
+/**
+ * determine if current page is an admin page
+ *
+ * @return boolean
+ */
 function isAdminPage()
 {
     $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];

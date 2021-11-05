@@ -7,6 +7,6 @@ $db_connection = mysqli_connect(
 );
 
 if (!$db_connection) {
-    echo 'Connection Error: '.mysqli_connect_error();
+    echo 'Connection Error: ' . mysqli_connect_error();
     exit();
 }
