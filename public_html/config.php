@@ -12,5 +12,5 @@ $app = [
     'db_hostname' => 'localhost',
     'db_username' => 'root',
     'db_password' => 'root',
-    'db_database_name' => 'local_idm250',
+    'db_database_name' => 'local_idm232',
 ];
