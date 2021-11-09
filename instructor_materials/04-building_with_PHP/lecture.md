@@ -391,7 +391,7 @@ $url .= "&" . "param2=" . urlencode($param2);
 
 ^ What works better is to have a file that contains a function and then we'll include that file in both PHP pages that need it. Even better, we can have a file dedicated to functions of a certain type and put all our functions in one, easy to locate, easy to include, place. And we can do that, by using PHP's `include` function.
 
-^ _examples/04-building\_with\_PHP/includes/NOTES.md_
+^ _examples/04-building\_with\_PHP/_includes/NOTES.md_
 
 ---
 

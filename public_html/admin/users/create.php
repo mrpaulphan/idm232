@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Create User';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/global/header.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
 
 // Form has been submitted
 if (isset($_POST['submit'])) {
@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
 ?>
 <div class="container">
   <h1>Create User</h1>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/alert.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/_components/alert.php'; ?>
   <form action="" method="POST">
 
     <label for="">First Name</label>
@@ -66,4 +66,4 @@ if (isset($_POST['submit'])) {
 
   </form>
 </div>
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../global/footer.php';
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../_global/footer.php';

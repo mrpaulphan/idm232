@@ -1,7 +1,9 @@
 <?php
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/helper.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/helper.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/database.php';
 
 // Set Page Title
 if (isset($page_title)) {
@@ -28,4 +30,4 @@ if (isset($page_title)) {
 </head>
 
 <body>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/navigation.php';
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/_components/navigation.php';

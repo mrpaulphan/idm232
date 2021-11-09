@@ -1,6 +1,6 @@
 <?php
-  $head = "../includes/_head.php";
-  $footer = "../includes/_footer.php";
+  $head = "../_includes/_head.php";
+  $footer = "../_includes/_footer.php";
   $jsonurl = "../data/data.json";
 
   /**

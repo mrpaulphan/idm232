@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Delete User';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/global/header.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
 
 if (isset($_GET['id'])) {
     $user_id = $_GET['id'];
@@ -23,4 +23,4 @@ if (isset($_GET['id'])) {
 }
 ?>
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../global/footer.php';
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../_global/footer.php';

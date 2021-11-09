@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Create User';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/global/header.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
 
 if (isset($_GET['id'])) {
     $user_id = $_GET['id'];
@@ -40,4 +40,4 @@ if (isset($_GET['id'])) {
             href="/admin/users/delete.php?id=<?php echo $user['id']; ?>">Delete</a>
     </p>
 </div>
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../global/footer.php';
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../_global/footer.php';

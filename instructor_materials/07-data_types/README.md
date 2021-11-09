@@ -138,8 +138,8 @@ Each file we export will share a common `head` and `footer` structure, so we'll 
 Let's add both of these includes to our gen script as variables so we have access to them when we need them.
 
 ```php
-$head = "../includes/_head.php";
-$footer = "../includes/_footer.php";
+$head = "../_includes/_head.php";
+$footer = "../_includes/_footer.php";
 ```
 
 ## Begin the Build

@@ -1,10 +1,10 @@
 <?php
 $page_title = 'Book Appointments';
-include_once __DIR__ . '/../global/header.php';
+include_once __DIR__ . '/../_global/header.php';
 ?>
 <div class="container">
   <h1>Book Appointments</h1>
-  <form action="/includes/process/create_appointment.php" method="POST">
+  <form action="/_includes/process/create_appointment.php" method="POST">
 
     <label for="">First Name</label>
     <input type="text" value="" name="first_name">
@@ -39,4 +39,4 @@ include_once __DIR__ . '/../global/header.php';
 
   </form>
 </div>
-<?php include_once __DIR__ . '/../global/footer.php';
+<?php include_once __DIR__ . '/../_global/footer.php';

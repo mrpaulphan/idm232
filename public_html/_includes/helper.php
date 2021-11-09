@@ -23,6 +23,18 @@ function getFormattedDateTime()
 }
 
 /**
+ * Output the full site url
+ *
+ * @param string $path
+ * @return string
+ */
+function siteUrl($path = '')
+{
+    $url = 'http://' . $_SERVER['SERVER_NAME'] ;
+    return $url . $path;
+}
+
+/**
  * determine if current page is an admin page
  *
  * @return boolean
