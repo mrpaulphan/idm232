@@ -1,15 +1,48 @@
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'] .'/_global/header.php';
 
+if (isset($_POST['submit'])) {
+    // check if the username and password is valid
+    $email = mysqli_real_escape_string($db_connection, $_POST['email']);
+    $password = mysqli_real_escape_string($db_connection, $_POST['password']);
+
+    // Build Query
+    $query = 'SELECT * ';
+    $query .= 'FROM users ';
+    $query .= "WHERE email='{$email}'";
+
+    $results = mysqli_query($db_connection, $query);
+    if ($results && $results->num_rows > 0) {
+        // Get row from results and assign to $user variable;
+        $user = mysqli_fetch_assoc($results);
+        // Verify that the submitted password matches the password from the users db
+        if (password_verify($password, $user['password'])) {
+            // email + password exist
+
+            // Create a user array in the SESSION variable
+            $_SESSION['user'] = [
+              'id' => $user['id'],
+              'first_name' => $user['first_name'],
+              'last_name' => $user['last_name'],
+              'role' => $user['role'],
+            ];
+            
+            redirectTo('/admin');
+        } else {
+            // Correct email but wrong password
+            redirectTo('/auth/login.php?error=Email or Password doest not exist.');
+        }
+    } else {
+        // Wrong Email + Password
+        redirectTo('/auth/login.php?error=Email or Password doest not exist.');
+    }
+    // if its valid we want to redirect them to the dashboard
+    // if its not valid we want display errors
+}
 ?>
 <div class="container">
   <h1>Login</h1>
-  <?php
-
-    if (isset($_GET['errorMessage'])) {
-        echo '<p class="error">'.$_GET['errorMessage'].'</p>';
-    }
-  ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/_components/alert.php'; ?>
   <form action="" method="post">
     <label for="emailField">Email</label>
     <input type="email" name="email" id="emailField" value="" required>

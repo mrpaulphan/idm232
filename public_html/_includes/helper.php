@@ -46,6 +46,21 @@ function isAdminPage()
     if (strpos($url, $match_string) !== false) {
         return false;
     } else {
-        return false;
+        return true;
+    }
+}
+
+/**
+ * Get current user from session
+ *
+ * @return mixed
+ */
+function currentUser()
+{
+    if (isset($_SESSION['user'])) {
+        $user = $_SESSION['user'];
+        return $user;
+    } else {
+        return ;
     }
 }

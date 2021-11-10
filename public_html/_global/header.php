@@ -1,9 +1,18 @@
 <?php
+// Initialize session data
+session_start();
 
+// Required files for the app
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/helper.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/database.php';
+
+// Current user is at the admin pages but not logged in
+// TODO: Look at this
+if (isAdminPage() && !$_SESSION) {
+    redirectTo('/');
+}
 
 // Set Page Title
 if (isset($page_title)) {

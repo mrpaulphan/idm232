@@ -59,7 +59,6 @@ font-size: 1rem;
 
 a {
   text-decoration: none;
-
 }
 a:visited {
   text-decoration: none;
@@ -156,13 +155,24 @@ table td {
 /* Extra Styles */
 
 .header {
-  display: flex;
-  align-items: center;
+  
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--color-slate);
   margin-bottom: 100px;
 
+}
+.header a {
+  color: white;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__left {
+  display: flex;
+  align-items: center;
 }
 
 .header__logo {
