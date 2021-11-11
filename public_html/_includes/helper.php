@@ -41,9 +41,9 @@ function siteUrl($path = '')
  */
 function isAdminPage()
 {
-    $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-    $match_string = '/admin/';
-    if (strpos($url, $match_string) !== false) {
+    $uri = $_SERVER['REQUEST_URI'];
+    $string_to_check_for = '/admin';
+    if (strpos($uri, $string_to_check_for) === false) {
         return false;
     } else {
         return true;

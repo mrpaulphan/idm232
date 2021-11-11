@@ -5,9 +5,9 @@ session_start();
 
 // Required files for the app
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/database.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/helper.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/functions.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/database.php';
 
 
 // Set Page Title
