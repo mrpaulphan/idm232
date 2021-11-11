@@ -1,3 +1,7 @@
+<?php
+$user = isset($_SESSION['user']);
+
+?>
 <header class="header ">
   <div class="container header__wrapper">
     <div class="header__left">
@@ -9,7 +13,7 @@
         <nav>
     </div>
     <nav aria-labelledby="">
-        <a href="profile">Welcome, <?php echo currentUser()['first_name']; ?></a>
+        <a href="profile">Welcome,</a>
     <nav>
   </div>
 </header>
