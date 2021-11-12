@@ -8,7 +8,7 @@
     </thead>
     <tbody>
         <?php
-          while ($row = mysqli_fetch_assoc($results)) {
+          while ($row = mysqli_fetch_assoc($db_results)) {
               echo '<tr>';
               echo '<td>' . $row['id'] . '</td>';
               echo '<td>' . $row['role'] . '</td>';

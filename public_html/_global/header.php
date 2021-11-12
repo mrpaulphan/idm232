@@ -10,6 +10,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/helper.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/_includes/functions.php';
 
 
+if (isAdminPage() && !isset($_SESSION['user'])) {
+    // Is on admin page and user does not exist
+    redirectTo('/');
+}
+
+
 // Set Page Title
 if (isset($page_title)) {
     $page_title = $page_title . ' | IDM 232';
@@ -35,4 +41,6 @@ if (isset($page_title)) {
 </head>
 
 <body>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/_components/navigation.php';
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/_components/navigation.php';?>
+<main class="page">
+

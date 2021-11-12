@@ -11,8 +11,8 @@ if (isset($_GET['id'])) {
     // Sanity check to make sure we're only deleting a single record.
     $query . -'LIMIT 1';
 
-    $results = mysqli_query($db_connection, $query);
-    if ($results) {
+    $db_results = mysqli_query($db_connection, $query);
+    if ($db_results) {
         redirectTo('/admin/users?success=User was deleted');
     } else {
         redirectTo('admin/users/view.php?id=' . $_GET['id'] . '&error=' . mysqli_error($db_connection));

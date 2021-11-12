@@ -8,7 +8,7 @@
 function siteUrl($path = '')
 {
     $url = 'http://' . $_SERVER['SERVER_NAME'] ;
-    return $url . $path;
+    echo $url . $path;
 }
 
 /**
@@ -19,7 +19,7 @@ function siteUrl($path = '')
  */
 function redirectTo($path)
 {
-    header('Location: ' . siteUrl($path));
+    header('Location: ' . $path);
 }
 
 /**
@@ -42,6 +42,7 @@ function getFormattedDateTime()
  */
 function isAdminPage()
 {
+    // Getting Slug
     $uri = $_SERVER['REQUEST_URI'];
     $string_to_check_for = '/admin';
     if (strpos($uri, $string_to_check_for) === false) {

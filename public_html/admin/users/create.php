@@ -18,8 +18,8 @@ if (isset($_POST['submit'])) {
     $query .= "VALUES ('{$role}', '{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$password}', '{$current_date}', '{$current_date}')";
 
     // Execute Query
-    $results = mysqli_query($db_connection, $query);
-    if ($results) {
+    $db_results = mysqli_query($db_connection, $query);
+    if ($db_results) {
         // Success
         redirectTo('/admin/users/');
     } else {

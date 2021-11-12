@@ -192,14 +192,33 @@ table td {
   display: flex;
   margin-top: 100px;
 
-  align-items: center;
+
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--color-slate);
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  justify-content: space-between;
+
 }
 .footer__nav a {
   color: #fff;
   display: inline-block;
   padding: 5px 5px;
   margin: 0 10px;
+}
+
+body, html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  flex: 1;
 }

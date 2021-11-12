@@ -10,10 +10,10 @@ if (isset($_GET['id'])) {
     $query .= 'FROM users ';
     $query .= 'WHERE id=' . $user_id;
 
-    $results = mysqli_query($db_connection, $query);
-    if ($results && $results->num_rows > 0) {
+    $db_results = mysqli_query($db_connection, $query);
+    if ($db_results && $db_results->num_rows > 0) {
         // Get row from results and assign to $user variable;
-        $user = mysqli_fetch_assoc($results);
+        $user = mysqli_fetch_assoc($db_results);
     } else {
         // Redirect user if ID does not have a match in the DB
         redirectTo('/admin/users?error=' . mysqli_error($db_connection));

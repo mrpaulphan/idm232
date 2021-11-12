@@ -12,21 +12,22 @@ if (isset($_POST['submit'])) {
     $query .= "WHERE email='{$email}'";
 
     $results = mysqli_query($db_connection, $query);
+
     if ($results && $results->num_rows > 0) {
         // Get row from results and assign to $user variable;
         $user = mysqli_fetch_assoc($results);
         // Verify that the submitted password matches the password from the users db
         if (password_verify($password, $user['password'])) {
             // email + password exist
-
-            // Create a user array in the SESSION variable
+    
+            // Create a user array in the SESSION variable and assign values to it
             $_SESSION['user'] = [
-              'id' => $user['id'],
-              'first_name' => $user['first_name'],
-              'last_name' => $user['last_name'],
-              'role' => $user['role'],
+                'id' => $user['id'],
+                'first_name' => $user['first_name'],
+                'last_name' => $user['last_name'],
+                'role' => $user['role'],
             ];
-            
+
             redirectTo('/admin');
         } else {
             // Correct email but wrong password
@@ -36,9 +37,12 @@ if (isset($_POST['submit'])) {
         // Wrong Email + Password
         redirectTo('/auth/login.php?error=Email or Password doest not exist.');
     }
-    // if its valid we want to redirect them to the dashboard
-    // if its not valid we want display errors
+
+    // get form data
+  // get that email and check the database if they exist
+  // redirect to the admin
 }
+
 ?>
 <div class="container">
   <h1>Login</h1>

@@ -29,9 +29,9 @@ if (isset($_POST['update'])) {
     $query .= "WHERE id = {$user_id}";
 
     // Execute Query
-    $results = mysqli_query($db_connection, $query);
+    $db_results = mysqli_query($db_connection, $query);
 
-    if ($results && $results->num_rows > 0) {
+    if ($db_results && $db_results->num_rows > 0) {
         // Success
         redirectTo('/admin/users?success=User Updated');
     } else {
@@ -45,9 +45,9 @@ if (isset($_POST['update'])) {
     $query .= 'FROM users ';
     $query .= 'WHERE id=' . $user_id;
 
-    $results = mysqli_query($db_connection, $query);
-    if ($results) {
-        $user = $row = mysqli_fetch_assoc($results);
+    $db_results = mysqli_query($db_connection, $query);
+    if ($db_results) {
+        $user = $row = mysqli_fetch_assoc($db_results);
     } else {
         // Redirect user if ID does not have a match in the DB
         redirectTo('/admin/users?error=' . mysqli_error($db_connection));
