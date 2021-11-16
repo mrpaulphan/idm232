@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
-    if ($db_results) {
+    if ($db_results && $db_results->num_rows > 0) {
         // Success
         redirectTo('/admin/users/');
     } else {

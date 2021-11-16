@@ -6,7 +6,8 @@ $app = [
     'name' => '',
     'url' => '',
     'env' => '',
-    'asset_url' => '',
+    // direct path to folder
+    'asset_url' =>'/dist/images/',
 
     // Database
     'db_hostname' => '',

@@ -6,6 +6,7 @@ $app = [
     'name' => 'Barber Booking',
     'url' => 'http://localhost',
     'env' => 'local',
+    // direct path to folder
     'asset_url' => '/dist/images/',
 
     // Database
