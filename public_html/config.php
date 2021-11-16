@@ -7,7 +7,7 @@ $app = [
     'url' => 'http://localhost',
     'env' => 'local',
     // direct path to folder
-    'asset_url' => '/dist/images/',
+    'asset_url' => '/dist/uploads/',
 
     // Database
     'db_hostname' => 'localhost',

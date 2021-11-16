@@ -23,9 +23,7 @@
     <div class="header__left">
       <a href="<?php siteUrl('/'); ?>"><img class="header__logo" src="/dist/images/logo.png" alt="Site Logo"></a>
       <nav class="header__nav">
-        <a href="<?php siteUrl('/admin/appointments.php'); ?>">About</a>
-        <a href="<?php siteUrl('/admin/services.php'); ?>">Services</a>
-        <a href="<?php siteUrl('/admin/services.php'); ?>">Contact</a>
+      
         <nav>
     </div>
     <nav aria-labelledby="">

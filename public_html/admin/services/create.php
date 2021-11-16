@@ -2,9 +2,10 @@
 $page_title = 'Create Service';
 include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
 
-// Form has been submitted
+
+// Form has been submitted. First upload image first then upload service
 if (isset($_POST['submit'])) {
-    //  Parse Data
+    // Parse Data
     $file_name = slugify($_FILES['image']['name']);
     $temp_name = $_FILES['image']['tmp_name'];
     $file_path = $app['asset_url'] . $file_name;

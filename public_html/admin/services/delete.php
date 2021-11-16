@@ -9,11 +9,10 @@ if (isset($_GET['id'])) {
     $query .= 'FROM services ';
     $query .= 'WHERE id=' . $id;
     // Sanity check to make sure we're only deleting a single record.
-    $query . -'LIMIT 1';
 
     $db_results = mysqli_query($db_connection, $query);
     if ($db_results) {
-        redirectTo('/admin/services?success=User was deleted');
+        redirectTo('/admin/services?success=Service was deleted');
     } else {
         redirectTo('admin/services/view.php?id=' . $_GET['id'] . '&error=' . mysqli_error($db_connection));
     }
