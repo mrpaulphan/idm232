@@ -1,9 +1,12 @@
 <?php
 
-
-
-
-
+/**
+ * Take string and make it slug friendly
+ *
+ * @param string $text
+ * @param string $divider
+ * @return string
+ */
  function slugify($text, $divider = '-')
  {
      // replace non letter or digits by divider
