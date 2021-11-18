@@ -7,6 +7,7 @@ $query = 'SELECT service.id, service.title, service.price, file.file_path ';
 $query .= 'FROM services AS service ';
 $query .= 'INNER JOIN files AS file ';
 $query .= 'ON service.file_id = file.id ';
+
 $db_results = mysqli_query($db_connection, $query);
 
 ?>

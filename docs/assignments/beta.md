@@ -11,10 +11,13 @@ Create a PHP based version of your final project pages. The functioning prototyp
 - Must include data driven from a MySQL database
 - Admin Pages
   - Recipe Listing Page
-  - Create Recipe functionality/screen
+  - Create Recipe functionality/screen 
   - Read Recipe functionality/screen (List of all recipes)
   - Edit Recipe functionality/screen
   - Delete Recipe functionality/screen
+
+***** Upload Image feature does not have to be included in the beta but will be required for the final *****
+
 
 The goal is to have a complete project that is ready for beta testing. Treat this assignment as if you were turning in your final project, with as much complete as possible. Results of the beta testing will provide an opportunity to clear all remaining bugs prior to final delivery.
 
