@@ -116,13 +116,13 @@ input[type="checkbox"] {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.btn-primary {
+.btn-primary, a.btn-primary {
   color: #fff;
   background-color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
-.btn-secondary {
+.btn-secondary, a.btn-secondary {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;

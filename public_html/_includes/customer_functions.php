@@ -82,6 +82,12 @@ function update_customer($first_name, $last_name, $email, $phone, $current_date,
       }
   }
 
+  /**
+   * Get customer by ID
+   *
+   * @param int $id
+   * @return void
+   */
   function get_customer_by_id($id)
   {
       global $db_connection;
@@ -102,6 +108,11 @@ function update_customer($first_name, $last_name, $email, $phone, $current_date,
       return $customer;
   }
 
+  /**
+   * get all customers
+   *
+   * @return mysqli_result
+   */
   function get_customers()
   {
       global $db_connection;
@@ -119,13 +130,15 @@ function update_customer($first_name, $last_name, $email, $phone, $current_date,
   }
 
   /**
+   * Search customers
    *
-   * @link https://www.w3schools.com/mysql/mysql_like.asp
+   * @param string $keyword search word
    * @return mysqli_result
    */
   function search_customer_with_keyword($keyword)
   {
       global $db_connection;
+      // Learn more here https://www.w3schools.com/mysql/mysql_like.asp
       $query = 'SELECT * ';
       $query .= 'FROM customers ';
       $query .= ' WHERE ';
@@ -135,12 +148,10 @@ function update_customer($first_name, $last_name, $email, $phone, $current_date,
       $query .= "OR phone LIKE '%" . $keyword . "%'";
 
       $result = mysqli_query($db_connection, $query);
-
       if ($result && $result->num_rows > 0) {
-          $customers = $result;
+          $results = $result;
       } else {
-          $customers = null;
+          $results = null;
       }
-
-      return $customers;
+      return $results;
   }

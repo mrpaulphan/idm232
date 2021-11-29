@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Create Service';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
+include_once __DIR_ '../../../_global/header.php';
 
 // Form has been submitted. First upload image first then upload service
 if (isset($_POST['submit'])) {
@@ -12,13 +12,13 @@ if (isset($_POST['submit'])) {
     $file_path = $app['asset_url'] . $file_name;
 
     // idm232/public_html/ + dist/uploads/image-name.png
-    $file_destination = $_SERVER['DOCUMENT_ROOT'] . $file_path;
+    $file_destination = __DIR_ $../../..file_path;
     $current_date = getFormattedDateTime();
 
     // Build Query
     $query = 'INSERT INTO files (file_path, file_title, date_created)';
     $query .= "VALUES ('{$file_path}', '{$file_name}', '{$current_date}')";
-  
+
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
     $new_uploaded_file_id = null;
@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
             $query = 'SELECT * ';
             $query .= 'FROM files ';
             $query .= "WHERE file_path='{$file_path}'";
-  
+
             $db_results = mysqli_query($db_connection, $query);
             if ($db_results) {
                 // Get row from results and assign to $user variable;
@@ -70,7 +70,7 @@ if (isset($_POST['submit'])) {
 ?>
 <div class="container">
     <h1>Create Service</h1>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/_components/alert.php'; ?>
+    <?php include __DIR_ '../../../_components/alert.php'; ?>
     <?php // Need to add enctype="multipart/form-data" to the form when dealing with file uploads?>
     <form action="" method="POST" enctype="multipart/form-data">
 
@@ -89,4 +89,4 @@ if (isset($_POST['submit'])) {
 
     </form>
 </div>
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/footer.php';
+<?php include_once __DIR_ '../../../_global/footer.php';

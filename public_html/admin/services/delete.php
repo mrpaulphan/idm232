@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Delete Service';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
+include_once $_SERVER['DOCUMENT_ROOT'] __DIR__ . '../../../_global/header.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -22,4 +22,4 @@ if (isset($_GET['id'])) {
 }
 ?>
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../_global/footer.php';
+<?php include_once $_SERVER['DOCUMENT_ROOT'] __DIR__ . '../../../../_global/footer.php';

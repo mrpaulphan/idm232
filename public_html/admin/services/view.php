@@ -1,6 +1,6 @@
 <?php
 $page_title = 'View Service';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
+include_once $_SERVER['DOCUMENT_ROOT'] __DIR__ . '../../../_global/header.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -40,4 +40,4 @@ if (isset($_GET['id'])) {
       href="/admin/services/delete.php?id=<?php echo $data['id']; ?>">Delete</a>
   </p>
 </div>
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/footer.php';
+<?php include_once $_SERVER['DOCUMENT_ROOT'] __DIR__ . '../../../_global/footer.php';

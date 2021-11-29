@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Edit Service';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
+include_once $_SERVER['DOCUMENT_ROOT'] __DIR__ . '../../../_global/header.php';
 
 if (isset($_POST['update'])) {
     $id = $_POST['user_id'];
@@ -59,7 +59,7 @@ if (isset($_POST['update'])) {
 ?>
 <div class="container">
   <h1>Create User</h1>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/_components/alert.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] __DIR__ . '../../../_components/alert.php'; ?>
   <form action="" method="POST">
 
     <label for="">First Name</label>
@@ -103,4 +103,4 @@ if (isset($_POST['update'])) {
 
   </form>
 </div>
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../_global/footer.php';
+<?php include_once $_SERVER['DOCUMENT_ROOT'] __DIR__ . '../../../../_global/footer.php';
