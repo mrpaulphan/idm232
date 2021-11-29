@@ -17,5 +17,11 @@ All assignments are outlined and should be submitted on [Drexel Blackboard](http
 - copy the`config.example.php`file and rename it `config.php`
 - Fill out the `config.php` with your information for your current environment.
   - This will different locally vs on production.
-
+- Make sure PHP errors are displaying. Instructions on how to enable them are [here](https://github.com/mrpaulphan/idm232/blob/master/docs/display_errors.md)
 ## Deploying to Bluehost via FTP
+- Export and create a backup of your production database
+- Export your local database and import it to your production DB
+  - This is optional. Be cautious when doing this. You can lose everything.
+- Upload everything but your `config.php` to your server.
+  - Your `config.php` should be filled out once on the initial setup and not have to touch this again.
+- Clear your cache
