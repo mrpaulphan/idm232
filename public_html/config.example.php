@@ -5,9 +5,9 @@ $app = [
     // App
     'name' => '',
     'url' => '',
-    'env' => '',
+    'env' => 'local', // local or production
     // direct path to folder
-    'asset_url' =>'/dist/images/',
+    'asset_url' => '/dist/uploads/',
 
     // Database
     'db_hostname' => '',

@@ -4,14 +4,14 @@ include_once __DIR__ . '../../../_global/header.php';
 
 if (isset($_GET['id'])) {
     $user_id = $_GET['id'];
-    $user = get_user_by_id($user_id);
+    $user = get_customer_by_id($user_id);
     // User doesn't exist with that ID
     if (!$user) {
-        redirectTo('/admin/users?error=' . mysqli_error($db_connection));
+        redirectTo('/admin/customers?error=' . mysqli_error($db_connection));
     }
 } else {
     // Redirect user if no ID is passed in URL
-    redirectTo('/admin/users');
+    redirectTo('/admin/customers');
 }
 ?>
 <div class="container">
@@ -26,9 +26,9 @@ if (isset($_GET['id'])) {
     <p>Last Updated: <?php echo $user['date_updated']; ?>
     </p>
     <p><a class="btn btn-primary"
-            href="/admin/users/edit.php?id=<?php echo $user['id']; ?>">Edit</a>
+            href="/admin/customers/edit.php?id=<?php echo $user['id']; ?>">Edit</a>
         <a class="btn btn-secondary"
-            href="/admin/users/delete.php?id=<?php echo $user['id']; ?>">Delete</a>
+            href="/admin/customers/delete.php?id=<?php echo $user['id']; ?>">Delete</a>
     </p>
 </div>
 <?php include_once __DIR__ . '../../../_global/footer.php';

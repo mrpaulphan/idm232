@@ -59,16 +59,18 @@ font-size: 1rem;
 
 a {
   text-decoration: none;
+  color: var(--color-primary);
 }
 a:visited {
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 label {
   display: block;
 }
 
-input {
+input, select {
   min-width: 200px;
   padding: 5px;
   font-size: 16px;
@@ -129,6 +131,10 @@ input[type="checkbox"] {
 /* Center tables for demo */
 table {
   margin: 0 auto;
+}
+
+table + table {
+  margin-top: 50px;
 }
 
 /* Default Table Style */
@@ -221,4 +227,12 @@ body {
 }
 .page {
   flex: 1;
+}
+
+
+.search-form {
+  margin: 50px 0;
+}
+.search-form input[type="text"] {
+  width: 300px;
 }

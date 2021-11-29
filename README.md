@@ -13,5 +13,9 @@ All assignments are outlined and should be submitted on [Drexel Blackboard](http
 - Email: [paul.phan@drexel.edu](mailto:paul.phan@drexel.edu)
 
 ## Getting Started
+- Download the repo and point your server to the `idm232/public_html` folder. 
 - copy the`config.example.php`file and rename it `config.php`
-- Fill out that information for your specific environment. 
+- Fill out the `config.php` with your information for your current environment.
+  - This will different locally vs on production.
+
+## Deploying to Bluehost via FTP

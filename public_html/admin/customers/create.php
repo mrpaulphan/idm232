@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Create User';
-include_once __DIR__ . '../../../_global/header.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
 
 // Form has been submitted
 if (isset($_POST['submit'])) {
@@ -61,4 +61,4 @@ if (isset($_POST['submit'])) {
 
   </form>
 </div>
-<?php include_once __DIR__ . '../../../_global/footer.php';
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../_global/footer.php';

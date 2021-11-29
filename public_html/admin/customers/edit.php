@@ -1,12 +1,12 @@
 <?php
 $page_title = 'Create User';
-include_once __DIR__ . '../../../_global/header.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
 
 if (isset($_POST['update'])) {
     $user_id = $_POST['user_id'];
     // Make sure GET ID == post ID
     if ($_GET['id'] != $user_id) {
-        redirectTo('/admin/users/edit.php?id=' . $_GET['id'] . '&error=User ID does not match current user.');
+        redirectTo('/admin/customers/edit.php?id=' . $_GET['id'] . '&error=User ID does not match current user.');
     }
     //  Parse Data
     $first_name = mysqli_real_escape_string($db_connection, $_POST['first_name']);
@@ -17,30 +17,30 @@ if (isset($_POST['update'])) {
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $current_date = getFormattedDateTime();
 
-    $results = update_user($first_name, $last_name, $email, $phone, $role, $current_date, $user_id);
+    $results = update_customer($first_name, $last_name, $email, $phone, $current_date, $user_id);
     if ($results) {
         // Success
-        redirectTo('/admin/users?success=User Updated');
+        redirectTo('/admin/customers?success=User Updated');
     } else {
         // Error
         redirectTo('/admin/users/edit.php?id=' . $user_id . '&error=' . mysqli_error($db_connection));
     }
 } elseif (isset($_GET['id'])) {
     $user_id = $_GET['id'];
-    $user = get_user_by_id($user_id);
+    $user = get_customer_by_id($user_id);
     // User doesn't exist
     if (!$user) {
         // Redirect user if ID does not have a match in the DB
-        redirectTo('/admin/users?error=' . mysqli_error($db_connection));
+        redirectTo('/admin/customers?error=' . mysqli_error($db_connection));
     }
 } else {
     // Redirect user if no ID is passed in URL
-    redirectTo('/admin/users');
+    redirectTo('/admin/customers');
 }
 ?>
 <div class="container">
-  <h1>Create User</h1>
-  <?php include __DIR__ . '../../../_components/alert.php'; ?>
+  <h1>Edit User</h1>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/_components/alert.php'; ?>
   <form action="" method="POST">
 
     <label for="">First Name</label>
@@ -84,4 +84,4 @@ if (isset($_POST['update'])) {
 
   </form>
 </div>
-<?php include_once __DIR__ . '../../../_global/footer.php';
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/../_global/footer.php';
