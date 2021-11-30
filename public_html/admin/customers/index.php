@@ -3,7 +3,7 @@ $page_title = 'Staff';
 include_once __DIR__ . '../../../_global/header.php';
 
 // If Keyword param exist, update query to show search results instead of everything
-if ($_GET['keyword']) {
+if (isset($_GET['keyword'])) {
     $keyword = $_GET['keyword'];
     $customers = search_customer_with_keyword($keyword);
 } else {
