@@ -4,6 +4,7 @@ include_once __DIR__ . '../../../_global/header.php';
 
 if (isset($_GET['id'])) {
     $user_id = $_GET['id'];
+ 
     $user = get_user_by_id($user_id);
     // User doesn't exist with that ID
     if (!$user) {

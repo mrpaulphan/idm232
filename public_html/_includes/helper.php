@@ -7,7 +7,8 @@
  */
 function siteUrl($path = '')
 {
-    $url = 'http://' . $_SERVER['SERVER_NAME'] ;
+    global $app;
+    $url =  $app['url'];
     echo $url . $path;
 }
 

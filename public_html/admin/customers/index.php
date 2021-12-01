@@ -18,7 +18,7 @@ if (isset($_GET['keyword'])) {
         href="<?php siteUrl('/admin/customers/create.php') ?>">Create</a>
     <?php include __DIR__ . '../../../_components/alert.php'; ?>
 
-    <form class="search-form" action="" method="get">
+    <form class="search-form" action="" method="GET">
         <label for="">Search</label>
         <input type="text" name="keyword" placeholder="John Doe"
             value="<?php echo @$_GET['keyword']; ?>">
