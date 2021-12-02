@@ -10,6 +10,7 @@
     - [Process and Insight](#process-and-insight)
     - [The Solution](#the-solution)
     - [The Results](#the-results)
+  - [Submitting the Assignment](#submitting-the-assignment)
 
 ## Overview
 
@@ -66,3 +67,6 @@ This is where you get to show off your final design with detailed images and vid
 ### The Results
 
 A quick wrap up. Was the project a success and why. Do you have qualitative and quantitative success metrics from your project? These should directly address the objectives you established in The Context and Challenge section. If this is client work, include a client testimonial. This also is an opportunity to define the lessons learned and what you would change about your process / approach in the future.
+
+## Submitting the Assignment
+- Create a PDF of your case study and add it to your github repository. This will be linked in your final project.

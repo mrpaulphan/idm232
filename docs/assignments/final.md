@@ -6,9 +6,12 @@ This page describes an assignment for this course. Due dates and submissions are
   - [Project Description](#project-description)
   - [Project Asset Files](#project-asset-files)
   - [Project Requirements](#project-requirements)
+    - [**User Pages**](#user-pages)
+    - [**Admin Pages**](#admin-pages)
+    - [**Extra Credit**](#extra-credit)
   - [Grading Criteria](#grading-criteria)
-  - [Screen Capture Video](#screen-capture-video)
   - [Submitting the Assignment](#submitting-the-assignment)
+  - [Example Submission](#example-submission)
 
 ## Project Description
 
@@ -43,22 +46,34 @@ The following outline lists the requirements for successfully completing the fin
 - [ ] All projects must be self hosted.
 - [ ] Source code must be tracked throughout the duration of the project using GitHub.
 - [ ] All data must be stored and served from a MySQL database, running on the live web server.
-- [ ] Projects must include all of the provided recipes, not a subset.
+- [ ] Projects must include all of the provided recipes, not a subset. Link [here](https://drive.google.com/drive/folders/1B4o77Gl6lyK6w42cNrLs1UeedZez3v2z?usp=sharing). One image per recipe is required.
 - [ ] All sites must be fully responsive, from a range of small to large (smart phone to desktop monitor).
+- [ ] Completed [Case study assignment](https://github.com/mrpaulphan/idm232/blob/0def798a1d199036f9266d621881d433c61b2e5d/docs/assignments/case-study.md)
 
-Pages
-**User Screens**
-- [ ] Home Screen
-- [ ] Category listing screen
-- [ ] Recipe Detail Screen
+### **User Pages**
+- [ ] Home/Landing
+- [ ] Category listing screen ( that list a group of recipes by a specific category)
+- [ ] Recipe Detail
+  - [ ] Has featured Image
 - [ ] Search Results
 
-**Admin Pages**
-- [ ] Recipe Listing Page
-- [ ] Create Recipe functionality/screen
-- [ ] Read Recipe functionality/screen (List of all recipes)
-- [ ] Edit Recipe functionality/screen
-- [ ] Delete Recipe functionality/screen
+### **Admin Pages**
+- [ ] Recipe Listing (List all 40 recipes)
+- [ ] Create Recipe
+  - [ ] Ability to upload a photo
+- [ ] Recipe Detail
+- [ ] Edit Recipe
+- [ ] Delete Recipe
+
+### **Extra Credit**
+- Login System (5 points)
+  - Login/Logout Pages
+  - Create a demo account for me to login with
+    - email = `paul.phan@drexel.edu`
+    - password = `idm232`
+  - An example of content changing if you're logged in
+    - Could be layout changes, text changes, permissions, or navigation changes.
+
 
 ## Grading Criteria
 
@@ -80,22 +95,41 @@ Your final project represents the culmination of ten weeks. This project will be
     - Is the database well structured and easy to manipulate?
     - Is the application properly templated, with minimal repetition of code?
 
-## Screen Capture Video
-
-As part of your final project submission, you are required to create a screen recording of your web application in action. This video should begin with your app's homepage, and then show the interface being interacted with. Scroll various pages, complete searches, use filters etc. Video requirements:
-
-- duration: minimum of 30 seconds
-- resolution: minimum of 1280x720
-- hosting: video **must** be hosted on Vimeo
-
 ## Submitting the Assignment
 
 Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Final Project**:
 
-1. A link to your self hosted website project page. From this page, I can fully engage the project and have access to all supplementary pages and functions.
-1. A link to your GitHub repository containing the code for your final project.
+This project is worth 50 points.
+- Case Study (10 Points)
+- Web App (40 Points)
+
+1. A link to your self hosted website project page. From this page, I can fully engage the project and have access to all supplementary pages and functions. List all pages that are required for this assignment.
+2. A link to your GitHub repository containing the code for your final project.
     - A copy of your MySQL database must be included in the repository.
-1. A link to your [case study](case-study.md) web page.
-1. A link to your project screen capture video, hosted on Vimeo.
+3. A link to your [case study](https://github.com/mrpaulphan/idm232/blob/0def798a1d199036f9266d621881d433c61b2e5d/docs/assignments/case-study.md) web page.
+
 
 **Late submissions receive zero points.**
+
+
+## Example Submission
+All links should be working valid links. This is just example/dummy content
+
+```
+Github Repo: https://github.com/mrpaulphan/idm232/tree/master/public_html
+Database Export: https://github.com/mrpaulphan/idm232/tree/master/public_html/sql
+Case Study: https://github.com/mrpaulphan/idm232/tree/master/public_html/{uri-to-example}
+
+Home Page: {link-to-example}
+Category Listing Page: {link-to-example}
+Recipe Detail Page: {link-to-example}
+Search Results Page: {link-to-example}
+
+Admin Recipe Listing: {link-to-example}
+Admin Recipe Create: {link-to-example}
+Admin Recipe Detail: {link-to-example}
+Admin Recipe Edit: {link-to-example}
+Admin Recipe Delete: {link-to-example/directions}
+
+Extra Credit
+{insert any extra features you added here}
