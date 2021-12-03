@@ -20,7 +20,9 @@ function siteUrl($path = '')
  */
 function redirectTo($path)
 {
-    header('Location: ' . $path);
+    global $app;
+    $url =  $app['url'];
+    header('Location: ' . $url . $path);
 }
 
 /**
