@@ -5,11 +5,14 @@ include_once __DIR_ '../../../_global/header.php';
 // Form has been submitted. First upload image first then upload service
 if (isset($_POST['submit'])) {
     // Parse Data
-    $file_name = slugify($_FILES['image']['name']);
+    $files_array = explode('.', $_FILES['image']['name']);
+    $file_title = slugify($files_array[0]);
+    $extension = $files_array[1];
+    $final_file_name = $file_title . '.' . $extension;
     $temp_name = $_FILES['image']['tmp_name'];
 
     // dist/uploads/image-name.png
-    $file_path = $app['asset_url'] . $file_name;
+    $file_path = $app['asset_url'] . $file_title;
 
     // idm232/public_html/ + dist/uploads/image-name.png
     $file_destination = __DIR_ $../../..file_path;
@@ -17,7 +20,7 @@ if (isset($_POST['submit'])) {
 
     // Build Query
     $query = 'INSERT INTO files (file_path, file_title, date_created)';
-    $query .= "VALUES ('{$file_path}', '{$file_name}', '{$current_date}')";
+    $query .= "VALUES ('{$file_path}', '{$file_title}', '{$current_date}')";
 
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
