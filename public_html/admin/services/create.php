@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     $file_path = $app['asset_url'] . $file_title;
 
     // idm232/public_html/ + dist/uploads/image-name.png
-    $file_destination = __DIR_ $../../..file_path;
+    $file_destination = __DIR_ . $file_path;
     $current_date = getFormattedDateTime();
 
     // Build Query
