@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Create Service';
-include_once __DIR__ '../../../_global/header.php';
+include_once __DIR__ . '../../../_global/header.php';
 
 // Form has been submitted. First upload image first then upload service
 if (isset($_POST['submit'])) {
@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
 ?>
 <div class="container">
     <h1>Create Service</h1>
-    <?php include __DIR__ '../../../_components/alert.php'; ?>
+    <?php include __DIR__ . '../../../_components/alert.php'; ?>
     <?php // Need to add enctype="multipart/form-data" to the form when dealing with file uploads?>
     <form action="" method="POST" enctype="multipart/form-data">
 
@@ -92,4 +92,4 @@ if (isset($_POST['submit'])) {
 
     </form>
 </div>
-<?php include_once __DIR__ '../../../_global/footer.php';
+<?php include_once __DIR__ . '../../../_global/footer.php';
