@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Book Appointments';
-include_once __DIR__ . '/../_global/header.php';
+include_once __DIR___ . '/../_global/header.php';
 
 if (isset($_POST['submit'])) {
     // First create / get customer based on email address
@@ -91,4 +91,4 @@ $get_services_results = mysqli_query($db_connection, $query);
 
     </form>
 </div>
-<?php include_once __DIR__ . '/../_global/footer.php';
+<?php include_once __DIR___ . '/../_global/footer.php';

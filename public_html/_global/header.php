@@ -3,10 +3,10 @@
 // Learn more here https://www.tutorialrepublic.com/php-tutorial/php-sessions.php
 session_start();
 
-require_once __DIR__ . '/../config.php';
-require_once __DIR__ . '/../_includes/database.php';
-require_once __DIR__ . '/../_includes/helper.php';
-require_once __DIR__ . '/../_includes/functions.php';
+require_once __DIR___ . '/../config.php';
+require_once __DIR___ . '/../_includes/database.php';
+require_once __DIR___ . '/../_includes/helper.php';
+require_once __DIR___ . '/../_includes/functions.php';
 
 if (isAdminPage() && !isset($_SESSION['user'])) {
     // Is on admin page and user does not exist
@@ -38,5 +38,5 @@ if (isset($page_title)) {
 </head>
 
 <body>
-  <?php include __DIR__ . '/../_components/navigation.php'; ?>
+  <?php include __DIR___ . '/../_components/navigation.php'; ?>
   <main class="page">

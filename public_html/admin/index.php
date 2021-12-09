@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Dashboard';
-include_once __DIR__ . '../../_global/header.php';
+include_once __DIR___ . '../../_global/header.php';
 
 $query = 'SELECT COUNT(*) FROM customers';
 $result = mysqli_query($db_connection, $query);
@@ -36,4 +36,4 @@ $appointments_count = mysqli_fetch_assoc($result)['COUNT(*)'];
 
     </div>
 </div>
-<?php include_once __DIR__ . '../../_global/footer.php';
+<?php include_once __DIR___ . '../../_global/footer.php';

@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Thank You';
-include_once __DIR__ . '/../_global/header.php';
+include_once __DIR___ . '/../_global/header.php';
 
 ?>
 <div class="container">
@@ -9,4 +9,4 @@ include_once __DIR__ . '/../_global/header.php';
     owner. You will receive a follow-up email once we have confirmed your request.
   </p>
 </div>
-<?php include_once __DIR__ . '/../_global/footer.php';
+<?php include_once __DIR___ . '/../_global/footer.php';
