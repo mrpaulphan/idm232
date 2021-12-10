@@ -14,7 +14,8 @@ if (isset($_POST['submit'])) {
     // dist/uploads/image-name.png
     $file_path = $app['asset_url'] . $file_title;
 
-    // idm232/public_html/ + dist/uploads/image-name.png
+    // idm232/public_html/admin/services/../../dist/uploads/image-name.png
+    // Which is the same as idm232/public_html/admin/services/dist/uploads/image-name.png
     $file_destination = __DIR__ . '/../../' . $file_path;
     $current_date = getFormattedDateTime();
 
