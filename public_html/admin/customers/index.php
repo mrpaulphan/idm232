@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Staff';
-include_once __DIR___ . '../../../_global/header.php';
+include_once __DIR__ . '../../../_global/header.php';
 
 // If Keyword param exist, update query to show search results instead of everything
 if (isset($_GET['keyword'])) {
@@ -16,7 +16,7 @@ if (isset($_GET['keyword'])) {
     <h1>Customers</h1>
     <a class="btn btn-primary"
         href="<?php siteUrl('/admin/customers/create.php') ?>">Create</a>
-    <?php include __DIR___ . '../../../_components/alert.php'; ?>
+    <?php include __DIR__ . '../../../_components/alert.php'; ?>
 
     <form class="search-form" action="" method="GET">
         <label for="">Search</label>
@@ -28,10 +28,10 @@ if (isset($_GET['keyword'])) {
     <?php
     // Check if the results returned anything
     if ($customers) {
-        include __DIR___ . '../../../_components/list-customers.php';
+        include __DIR__ . '../../../_components/list-customers.php';
     } else {
         echo '<p>There are currently no customers in the database</p>';
     }
     ?>
 </div>
-<?php include_once __DIR___ . '../../../_global/footer.php';
+<?php include_once __DIR__ . '../../../_global/footer.php';

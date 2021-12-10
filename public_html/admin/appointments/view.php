@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Book Appointments';
-include_once __DIR___ . '../../../_global/header.php';
+include_once __DIR__ . '../../../_global/header.php';
 if ($_POST['submit']) {
     $id = $_GET['id'];
     $status = update_appointment_status($id, $_POST['status']);
@@ -45,4 +45,4 @@ if ($_POST['submit']) {
 
   </form>
 </div>
-<?php include_once __DIR___ . '../../../_global/footer.php';
+<?php include_once __DIR__ . '../../../_global/footer.php';

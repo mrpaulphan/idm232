@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Create User';
-include_once __DIR___ . '../../../_global/header.php';
+include_once __DIR__ . '../../../_global/header.php';
 
 if (isset($_POST['update'])) {
     $user_id = $_POST['user_id'];
@@ -40,7 +40,7 @@ if (isset($_POST['update'])) {
 ?>
 <div class="container">
   <h1>Create User</h1>
-  <?php include __DIR___ . '../../../_components/alert.php'; ?>
+  <?php include __DIR__ . '../../../_components/alert.php'; ?>
   <form action="" method="POST">
 
     <label for="">First Name</label>
@@ -84,4 +84,4 @@ if (isset($_POST['update'])) {
 
   </form>
 </div>
-<?php include_once __DIR___ . '../../../_global/footer.php';
+<?php include_once __DIR__ . '../../../_global/footer.php';

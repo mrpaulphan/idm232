@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Delete User';
-include_once __DIR___ . '../../../_global/header.php';
+include_once __DIR__ . '../../../_global/header.php';
 
 if (isset($_GET['id'])) {
     $user_id = $_GET['id'];
@@ -17,4 +17,4 @@ if (isset($_GET['id'])) {
 }
 ?>
 
-<?php include_once __DIR___ . '../../../../_global/footer.php';
+<?php include_once __DIR__ . '../../../../_global/footer.php';
