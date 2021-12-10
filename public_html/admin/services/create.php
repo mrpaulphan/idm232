@@ -7,12 +7,12 @@ if (isset($_POST['submit'])) {
     // Parse Data
     $files_array = explode('.', $_FILES['image']['name']);
     $file_title = slugify($files_array[0]);
-    $extension = $files_array[1];
+    $extension = end($files_array);
     $final_file_name = $file_title . '.' . $extension;
     $temp_name = $_FILES['image']['tmp_name'];
 
     // dist/uploads/image-name.png
-    $file_path = $app['asset_url'] . $file_title;
+    $file_path = $app['asset_url'] . $final_file_name;
 
     // idm232/public_html/admin/services/../../dist/uploads/image-name.png
     // Which is the same as idm232/public_html/admin/services/dist/uploads/image-name.png
@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
 
     // Build Query
     $query = 'INSERT INTO files (file_path, file_title, date_created)';
-    $query .= "VALUES ('{$file_path}', '{$file_title}', '{$current_date}')";
+    $query .= "VALUES ('{$file_path}', '{$file_path}', '{$current_date}')";
 
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
