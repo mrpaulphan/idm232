@@ -14,6 +14,8 @@ theme: Ostrich, 1
 
 - Introduction
 - About this Course
+- PHP Introduction
+- Local Setup
 
 ---
 
@@ -21,8 +23,9 @@ theme: Ostrich, 1
 
 ![inline](./../../assets/images/avatar.png)
 
-- Schedule a meeting: [calendar](https://calendly.com/mr-paulphan)
+- Schedule a meeting: [calendar](https://hub.flexibits.com/openings/mrpaulphan/schedule/)
 - Email: [paul.phan@drexel.edu](mailto:paul.phan@drexel.edu)
+- Discord: `MrPaulPhan#8336`
 
 ---
 
@@ -46,7 +49,7 @@ theme: Ostrich, 1
 
 - [Drexel Learn](https://learn.dcollege.net/webapps/login/)
 - [Course Repository](https://github.com/mrpaulphan/idm232)
-- [syllabus](https://github.com/mrpaulphan/idm232/blob/master/docs/syllabus.md)
+- [Syllabus](https://github.com/mrpaulphan/idm232/blob/master/docs/syllabus.md)
 
 ^ All course information including syllabus, overview and assignments will be managed through Drexel's Blackboard (BBLearn) system. Let's log in and review the syllabus and course information now.
 
@@ -112,12 +115,6 @@ theme: Ostrich, 1
 
 ---
 
-## How Does a server side work?
-
-![inline](./../../assets/images/server_side.png)
-
----
-
 ## Apache, MySql, PHP Apps
 
 - LAMP
@@ -138,31 +135,6 @@ $$ WAMP = Windows+Apache+MySQL+PHP $$
 $$ XAMP = (L|M|W)+Apache+MySQL+PHP $$
 
 ^ There are other combinations, but these are the most popular. We'll take a look at getting setup with MAMP and WAMP, if anyone is using Linux we can also look at a LAMP setup. Rather than manually setting up a web server, installing MySQL database and PHP software, we're going to look at some applications that are available to add to your system that include all of these pieces of software, and provide a GUI for managing them.
-
----
-
-## MAMP Installation
-
-![inline](./../../assets/images/mamp.png)
-
-[https://www.mamp.info/en/](https://www.mamp.info/en/)
-
-^ For Mac users, that application is going to be MAMP. It is available for download at [https://www.mamp.info/en/](https://www.mamp.info/en/). There is a free version and a pro version. The free version will be fine for this class. If you develop more complicated projects or require multiple web servers to run at the same time, the pro version is worth the upgrade cost.
-
----
-
-## Root Paths
-
-- MAC:
-  - `/Applications/MAMP/htdocs/folder/file.php`
-  - `localhost:8888/folder/file.php`
-- Windows:
-  - `c:\wamp\www\folder/file.php`
-  - `localhost/folder/file.php`
-
-^ Depending on your setup you will need to store your files in a specific location, and then access them via the browser through a specific URL. (example of `htdocs` Finder setup and browser navigation).
-
-^ (example of `htdocs` alias)
 
 ---
 
@@ -380,6 +352,32 @@ function hello_world() {
 ^ There are some plugins for our editor that can really enhance our commenting and save us some time, allowing us to focus on the writing portion.
 
 ^ Comments are super important to writing good code. They can be hard to be disciplined about it. You get caught up in writing the code, and often you forget to leave yourself comments. But once you start programming a lot you'll realize that comments are going to save you a lot of time, not now, but 10 weeks from now. When you come back to the code. You can't remember what you were trying to do or why you chose a certain approach. It's one of those things where investing a little bit of time in the beginning is going to save you lots of time later on. And comments are especially friendly if there's ever someone else who's going to be working with your code, because they don't know what you were thinking. They don't know the reasoning that you went through to arrive at a solution to a certain problem, but your comments can make it clear to them.
+
+---
+
+## MAMP/XAMP Installation
+
+![inline](./../../assets/images/mamp.png)
+
+[https://www.mamp.info/en/](https://www.mamp.info/en/)
+[XAMPP](https://www.apachefriends.org/download.html)
+
+^ For Mac users, that application is going to be MAMP. It is available for download at [https://www.mamp.info/en/](https://www.mamp.info/en/). There is a free version and a pro version. The free version will be fine for this class. If you develop more complicated projects or require multiple web servers to run at the same time, the pro version is worth the upgrade cost.
+
+---
+
+## Root Paths
+
+- MAC:
+  - `/Applications/MAMP/htdocs/folder/file.php`
+  - `localhost:8888/folder/file.php`
+- Windows:
+  - `c:\wamp\www\folder/file.php`
+  - `localhost/folder/file.php`
+
+^ Depending on your setup you will need to store your files in a specific location, and then access them via the browser through a specific URL. (example of `htdocs` Finder setup and browser navigation).
+
+^ (example of `htdocs` alias)
 
 ---
 
