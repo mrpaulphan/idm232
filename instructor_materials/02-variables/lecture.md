@@ -61,7 +61,7 @@ theme: Work, 1
 
 ## Variables
 
-![fill](http://digm.drexel.edu/crs/IDM232/presentations/images/php-html-code.jpg)
+![fill](https://digm.drexel.edu/crs/IDM232/presentations/images/php-html-code.jpg)
 
 ^ Our exploration in the PHP programming language is going to begin with an exploration of the different structures or types that we can use while writing PHP. And the first of those that we're going to look at are variables. You're all familiar with variables from other programming. A variable is a symbolic representation of a value. You can think of it as a symbol that refers to something and that's going to make a lot more sense once we actually start using them. But as it's name suggests, it can change over time or vary. It has a variable value because it can point to different values. Now, in PHP, there's some rules about the kinds of names that we can give to variables.
 
@@ -88,7 +88,7 @@ theme: Work, 1
 ?>
 ```
 
-^ So let me give you some examples of some variable names and then we can talk about them. So I could have item, which is just `$item`.  I could also have Item with an uppercase I. These are two different variables, with potentially two different values. You want to be consistent with capitalization. Best practice - avoid starting variable names with a capital letter.
+^ So let me give you some examples of some variable names and then we can talk about them. So I could have item, which is just `$item`. I could also have Item with an uppercase I. These are two different variables, with potentially two different values. You want to be consistent with capitalization. Best practice - avoid starting variable names with a capital letter.
 
 ---
 
@@ -127,7 +127,7 @@ theme: Work, 1
 ?>
 ```
 
-^ You can put numbers in it. So product3, that's perfectly valid to have a third product named that way. You can put underscores in front of it. Remember, the first character has to either be a letter or an underscore, so you could have \_book. You could even have multiple underscores, $\__bookPage. Now, all of these are valid. Any of these will absolutely work. But I want to steer you towards some and away from others.
+^ You can put numbers in it. So product3, that's perfectly valid to have a third product named that way. You can put underscores in front of it. Remember, the first character has to either be a letter or an underscore, so you could have \_book. You could even have multiple underscores, $\_\_bookPage. Now, all of these are valid. Any of these will absolutely work. But I want to steer you towards some and away from others.
 
 ---
 
@@ -147,7 +147,7 @@ Avoid:
 
 ---
 
-[http://php.net/manual/en/reserved.php](http://php.net/manual/en/reserved.php)
+[https://php.net/manual/en/reserved.php](https://php.net/manual/en/reserved.php)
 
 ^ PHP actually has some words that are reserved, words that you're not allowed to use for different things, and it's a good idea to take a review of this list, and then stay away from those words as much as possible. Sometimes, it's not a problem to use it for a variable name, but it might be a problem to use it in other contexts. It's basically just names with special meaning to PHP that we don't want to use.
 
@@ -259,7 +259,7 @@ Avoid:
 
 ## String Functions
 
-^ We've seen the basics of working with strings. Now I want us to take a look at some functions that we can use with strings. We haven't looked at a lot of functions yet. So far we've really just looked at the PHP info function and Echo. Those are really the two main functions that we've seen. So we're going to start diving into the world of functions. And before we do, I just want to remind you that the [php.net](http://php.net) website has some excellent documentation for functions. And it will tell you all of the different functions that are predefined in PHP, it'll tell you how to use them, has good user submitted tips for you, all of that's there. And you can browse through those if you're looking for something, you're not quite sure what it is. Or if you know the name of the function you can just type it into the search bar at the top and it will return the documentation for it directly.
+^ We've seen the basics of working with strings. Now I want us to take a look at some functions that we can use with strings. We haven't looked at a lot of functions yet. So far we've really just looked at the PHP info function and Echo. Those are really the two main functions that we've seen. So we're going to start diving into the world of functions. And before we do, I just want to remind you that the [php.net](https://php.net) website has some excellent documentation for functions. And it will tell you all of the different functions that are predefined in PHP, it'll tell you how to use them, has good user submitted tips for you, all of that's there. And you can browse through those if you're looking for something, you're not quite sure what it is. Or if you know the name of the function you can just type it into the search bar at the top and it will return the documentation for it directly.
 
 ---
 
@@ -385,7 +385,7 @@ Find: <?php echo strstr($third, "brown"); ?><br>
 
 Find: brown fox jumped over the lazy dog.
 
-^  Find uses a function named `strstr`; you're finding a string within a string. So inside `$third` we're going to look for _brown_, and see what it returns.
+^ Find uses a function named `strstr`; you're finding a string within a string. So inside `$third` we're going to look for _brown_, and see what it returns.
 
 ^ The Find did find the word brown. Notice what it returned to us, it returned everything after the find in the string. So it found _brown_ and the result that was returned was not just the word, but everything that follows as well.
 
@@ -498,7 +498,7 @@ Basic math: <?php echo ((1 + 2 + $var1) * $var2) / 2 - 5 ?>
 
   Basic math: <?php echo ((1 + 2 + $var1) * $var2) / 2 - 5 ?>
   // 1 + 2 + 3 = 6 * 4 = 24 / 2 = 12 - 5 = 7
-  ```
+```
 
 ---
 
@@ -520,7 +520,7 @@ $var2 = 4;
 $var2 = $var2 + 1;
 ```
 
-^ Incrementing a number is very common, especially when dealing with loops, which we'll get to next week. If  I want to increase the value of `$var2` by one, I can use basic math and do that. There is nothing wrong with this code.
+^ Incrementing a number is very common, especially when dealing with loops, which we'll get to next week. If I want to increase the value of `$var2` by one, I can use basic math and do that. There is nothing wrong with this code.
 
 ---
 
@@ -757,7 +757,7 @@ echo "Is {$float} numeric? " . is_numeric($float);
 
 ---
 
-## Array: [Pocket 3][Pocket 1]
+## Array: [Pocket 3][pocket 1]
 
 ```php
 <?php
@@ -907,7 +907,7 @@ $email_addresses = [
 ?>
 ```
 
-^ So if I wanted to get back the first name, I can `echo` the variable _assoc_, then in square brackets, the value will be the key instead of the position, in this case _first\_name_.
+^ So if I wanted to get back the first name, I can `echo` the variable _assoc_, then in square brackets, the value will be the key instead of the position, in this case _first_name_.
 
 ---
 
@@ -990,7 +990,7 @@ Explode: <?php print_r(explode(" * ", $num_string)); ?>
 // ( [0] => 4 [1] => 8 [2] => 15 [3] => 16 [4] => 23 [5] => 42 )
 ```
 
-^ The opposite of `implode` is `explode`, which is going to take a string like `$num_string` and every time it finds this first parameter string (" * "), it's going to use it as a divider between values. So every time is sees a space and then an asterisk space, it's going to split the string into a new object in the array.
+^ The opposite of `implode` is `explode`, which is going to take a string like `$num_string` and every time it finds this first parameter string (" \* "), it's going to use it as a divider between values. So every time is sees a space and then an asterisk space, it's going to split the string into a new object in the array.
 
 ---
 
@@ -1019,13 +1019,13 @@ Explode: <?php print_r(explode(" * ", $num_string)); ?>
 
 ---
 
-## [php.net/manual/en/ref.array.php](http://php.net/manual/en/ref.array.php)
+## [php.net/manual/en/ref.array.php](https://php.net/manual/en/ref.array.php)
 
 ---
 
 ## Booleans
 
-^  A Boolean is a programming type that can either be true or false. That's it, one of those two values. And true is not the string true or even the number one. It's just simply the value true. Booleans are very useful in programming because we can use them when performing tests. For example, we used the `in_array` function to test whether an integer was inside of an array. The result was that the test was a Boolean, true if the integer was present, false if it was not. Let's start by creating ourselves a new workspace for this.
+^ A Boolean is a programming type that can either be true or false. That's it, one of those two values. And true is not the string true or even the number one. It's just simply the value true. Booleans are very useful in programming because we can use them when performing tests. For example, we used the `in_array` function to test whether an integer was inside of an array. The result was that the test was a Boolean, true if the integer was present, false if it was not. Let's start by creating ourselves a new workspace for this.
 
 ---
 

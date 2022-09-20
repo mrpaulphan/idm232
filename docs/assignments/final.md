@@ -36,7 +36,7 @@ Additional techniques, including, but not limited to the following may be used a
 
 ## Project Asset Files
 
-[Download asset files](http://cdn.philsinatra.com/idm/IDM232-assets.zip)
+[Download asset files](https://cdn.philsinatra.com/idm/IDM232-assets.zip)
 
 ## Project Requirements
 
@@ -51,6 +51,7 @@ The following outline lists the requirements for successfully completing the fin
 - [ ] Completed [Case study assignment](https://github.com/mrpaulphan/idm232/blob/0def798a1d199036f9266d621881d433c61b2e5d/docs/assignments/case-study.md)
 
 ### **User Pages**
+
 - [ ] Home/Landing
 - [ ] Category listing screen ( that list a group of recipes by a specific category)
 - [ ] Recipe Detail
@@ -58,6 +59,7 @@ The following outline lists the requirements for successfully completing the fin
 - [ ] Search Results
 
 ### **Admin Pages**
+
 - [ ] Recipe Listing (List all 40 recipes)
 - [ ] Create Recipe
   - [ ] Ability to upload a photo
@@ -66,6 +68,7 @@ The following outline lists the requirements for successfully completing the fin
 - [ ] Delete Recipe
 
 ### **Extra Credit**
+
 - Login System (5 points)
   - Login/Logout Pages
   - Create a demo account for me to login with
@@ -74,45 +77,44 @@ The following outline lists the requirements for successfully completing the fin
   - An example of content changing if you're logged in
     - Could be layout changes, text changes, permissions, or navigation changes.
 
-
 ## Grading Criteria
 
 Your final project represents the culmination of ten weeks. This project will be graded based on the following criteria:
 
 1. Code Quality
-    - Is all of your code valid?
-    - Did you follow best practices regarding file names, characters, coding styles?
-    - Is your code legible and easy to navigate?
-    - Does your code use comments?
+   - Is all of your code valid?
+   - Did you follow best practices regarding file names, characters, coding styles?
+   - Is your code legible and easy to navigate?
+   - Does your code use comments?
 2. Functionality
-    - Everything needs to work (e.g. links, videos, audio, images, rollovers etc.). If it's part of your site it must be working properly.
+   - Everything needs to work (e.g. links, videos, audio, images, rollovers etc.). If it's part of your site it must be working properly.
 3. Design
-    - Is your site visually pleasing?
-    - Is your content legible with proper contrast, color scheme, typography etc.?
-    - Would you feel comfortable using this project in a job interview as an example of your skills?
+   - Is your site visually pleasing?
+   - Is your content legible with proper contrast, color scheme, typography etc.?
+   - Would you feel comfortable using this project in a job interview as an example of your skills?
 4. Technique
-    - Is the project built in an optimized fashion? Will future maintenance be minimal?
-    - Is the database well structured and easy to manipulate?
-    - Is the application properly templated, with minimal repetition of code?
+   - Is the project built in an optimized fashion? Will future maintenance be minimal?
+   - Is the database well structured and easy to manipulate?
+   - Is the application properly templated, with minimal repetition of code?
 
 ## Submitting the Assignment
 
 Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Final Project**:
 
 This project is worth 50 points.
+
 - Case Study (10 Points)
 - Web App (40 Points)
 
 1. A link to your self hosted website project page. From this page, I can fully engage the project and have access to all supplementary pages and functions. List all pages that are required for this assignment.
 2. A link to your GitHub repository containing the code for your final project.
-    - A copy of your MySQL database must be included in the repository.
+   - A copy of your MySQL database must be included in the repository.
 3. A link to your [case study](https://github.com/mrpaulphan/idm232/blob/0def798a1d199036f9266d621881d433c61b2e5d/docs/assignments/case-study.md) web page.
-
 
 **Late submissions receive zero points.**
 
-
 ## Example Submission
+
 All links should be working valid links. This is just example/dummy content
 
 ```
@@ -133,3 +135,4 @@ Admin Recipe Delete: {link-to-example/directions}
 
 Extra Credit
 {insert any extra features you added here}
+```

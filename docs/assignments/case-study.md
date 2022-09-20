@@ -20,7 +20,7 @@ Case studies are narratives that reveal what you are capable of. They allow you 
 
 Here are some links to what I think are good examples. They are not crazy, but they do show great content and structure.
 
-- [http://simonpan.com/work/amazon-prime-music/](http://simonpan.com/work/amazon-prime-music/)
+- [https://simonpan.com/work/amazon-prime-music/](https://simonpan.com/work/amazon-prime-music/)
 - [https://design.google/library/evolving-google-identity/](https://design.google/library/evolving-google-identity/)
 - [https://www.gravitatedesign.com/work/visit-seattle/](https://www.gravitatedesign.com/work/visit-seattle/)
 
@@ -69,4 +69,5 @@ This is where you get to show off your final design with detailed images and vid
 A quick wrap up. Was the project a success and why. Do you have qualitative and quantitative success metrics from your project? These should directly address the objectives you established in The Context and Challenge section. If this is client work, include a client testimonial. This also is an opportunity to define the lessons learned and what you would change about your process / approach in the future.
 
 ## Submitting the Assignment
+
 - Create a PDF of your case study and add it to your github repository. This will be linked in your final project.

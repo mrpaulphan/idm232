@@ -18,7 +18,7 @@ theme: Work, 1
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_09.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_09.png)
 
 ^ Think back for a moment to the diagram that we saw, with the request response cycle, that shows requests starting at the browser, going to the web server, the web server processes our PHP and returns an HTML page back to the browser. That cycle, that request response cycle begins with a browser request. Nothing happens on the web server unless the user sends in some information to us. And there are only three ways that we can get data from users on the web.
 
@@ -36,11 +36,11 @@ theme: Work, 1
 
 ## Link Methods
 
-| Type | Method |
-|:----:|:------:|
-| URLs / Links | GET |
-| Forms | POST |
-| Cookies | COOKIE |
+|     Type     | Method |
+| :----------: | :----: |
+| URLs / Links |  GET   |
+|    Forms     |  POST  |
+|   Cookies    | COOKIE |
 
 ^ The first is Get, the second is Post and the last is Cookie. So, URLs and Links are Get requests, a form is a Post request. And Cookie, well, it's not really a cookie request, but it's the way that we access the cookie information that piggybacks on each request. So, these are the three main things that we're going to be looking at. Now, every web language has a different way to interact with these three types of user data. We'll start by looking at URLs and links.
 
@@ -49,7 +49,7 @@ theme: Work, 1
 ## URL Parameter
 
 ```html
-<a href="somepage.php?page=2">
+<a href="somepage.php?page=2"></a>
 ```
 
 ^ We being by learning how to send a value from one page to the next by using the URL query parameters. The query parameters are the part of the URL that comes after the question mark. This is typically were you send additional parameters that the page needs. The format is always the name of the parameter, an equals sign and then the value of the parameter. Often these parameters modify the behavior of the code used to generate the returned HTML. For example, `somepage.php?page=2` would process the same PHP code but the content return would probably be modified. It would do something like return a second page of search results.
@@ -59,7 +59,7 @@ theme: Work, 1
 ## URL Parameters
 
 ```html
-<a href="somepage.php?category=7&page=3">
+<a href="somepage.php?category=7&page=3"></a>
 ```
 
 ^ And you can send more than one query parameter in the URL by using an ampersand between each one of these parameters.
@@ -69,12 +69,12 @@ theme: Work, 1
 ## ## URL Parameter - `GET` Values
 
 ```html
-http://google.com/search?q=php
+https://google.com/search?q=php
 ```
 
 ^ You can search all over the web and find examples where these query parameters are being used. In PHP, whenever a page request is made, PHP is going to automatically take all of those query parameters that were sent with the URL and put them into an associative array where we can access them.
 
-^ _examples/04-building\_with\_PHP/links/page1.php_
+^ _examples/04-building_with_PHP/links/page1.php_
 
 ---
 
@@ -97,7 +97,7 @@ $_GET
 
 ^ And that makes sense, because GET is the HTTP method that relates to URLs and links. And the way that we access it is with dollar sign, underscore and then all capitals GET. That's the name of the super global where the query parameters are put by PHP. Notice the underscore that's in the beginning. That's how all super globals are going to be named. This is why when we discussed naming your variables I recommended not starting your variable names with underscores; it will help these super globals really stand out. Let's see how we access these now.
 
-^ _examples/04-building\_with\_PHP/links/page2.php_
+^ _examples/04-building_with_PHP/links/page2.php_
 
 ---
 
@@ -133,8 +133,8 @@ $_GET
 
 - (
 - )
-- *
-- +
+- -
+- -
 - ,
 - /
 
@@ -152,13 +152,13 @@ $_GET
 
 ---
 
-## ! # $ % & ' ( ) * + , / : ; = ? @ [ ]
+## ! # $ % & ' ( ) \* + , / : ; = ? @ [ ]
 
 ^ You can see there are quite a few. When we're constructing URLs, we must encode these characters so they don't interfere with the function of the URL.
 
 ---
 
-![full](http://digm.drexel.edu/crs/IDM232/presentations/images/character_encoding_table.png)
+![full](https://digm.drexel.edu/crs/IDM232/presentations/images/character_encoding_table.png)
 
 ^ Encoding a reserved character means converting that character to a percent sign followed by a pair of hexadecimal digits. Hexadecimal just means that in addition to zero to nine, we can use the letters A through F as if they were digits, too. So, what we'll need to do is be able to convert each of these characters into its hexadecimal form, put it in a URL. And then we'll decode it by converting it back once the page is received.
 
@@ -182,7 +182,7 @@ urlencode($string);
 
 ^ So, `urlencode` is going to take (_click_) letters, number, underscores and dashes and let them pass through completely unchanged. (_click_) But those reserve characters, that we just saw, are going to become their hexadecimal equivalent. That percent sign, follow by two digit hexadecimal digit number. (_click_) And spaces are going to become plus signs. Remember that, because that's going to be important in a minute. We'll talk about that. Let's try using it.
 
-^ _examples/04-building\_with\_PHP/urlencode/encode1.php_ | _encode2.php_
+^ _examples/04-building_with_PHP/urlencode/encode1.php_ | _encode2.php_
 
 ---
 
@@ -212,7 +212,7 @@ urlencode($string);
 
 ^ With `rawurlencode`, (_click_) letters, numbers, underscore and dash are unchanged. (_click_) The reserved characters get converted but, here's the big difference. (_click_) Spaces become percent 20. They get encoded into a two-digit hexadecimal also instead of using the plus. It may seem like a minor point, but it does make some big differences. It's easy for us to try it.
 
-^ _examples/04-building\_with\_PHP/urlencode/encode1.php_
+^ _examples/04-building_with_PHP/urlencode/encode1.php_
 
 ---
 
@@ -231,7 +231,7 @@ urlencode($string);
 
 ^ (_click_) But, you want to use `urlencode` on the query string. That's everything that comes after question mark. That's because spaces are better encoded as plus.
 
-^ _examples/04-building\_with\_PHP/urlencode/encode3.php_
+^ _examples/04-building_with_PHP/urlencode/encode3.php_
 
 ---
 
@@ -246,9 +246,7 @@ urlencode($string);
 ```html
 <div>
   <h1>Reserved Characters</h1>
-  <p>We have to watch out for
-    characters with special
-    meaning to HTML.</p>
+  <p>We have to watch out for characters with special meaning to HTML.</p>
 </div>
 ```
 
@@ -355,7 +353,7 @@ $linktext = "<Click> & learn more";
 ## Encoding
 
 ```php
-$url = "http://localhost/";
+$url = "https://localhost/";
 $url .= rawurlencode($url_page);
 $url .= "?" . "param1=" . urlencode($param1);
 $url .= "&" . "param2=" . urlencode($param2);
@@ -375,7 +373,7 @@ $url .= "&" . "param2=" . urlencode($param2);
 
 ^ We also need to use `htmlspecialchars` to make sure we can display our HTML text that may include special characters. Now our URL and our HTML are safe to use as a link
 
-^ _examples/04-building\_with\_PHP/urlencode/encode-full.php_
+^ _examples/04-building_with_PHP/urlencode/encode-full.php_
 
 ---
 
@@ -391,7 +389,7 @@ $url .= "&" . "param2=" . urlencode($param2);
 
 ^ What works better is to have a file that contains a function and then we'll include that file in both PHP pages that need it. Even better, we can have a file dedicated to functions of a certain type and put all our functions in one, easy to locate, easy to include, place. And we can do that, by using PHP's `include` function.
 
-^ _examples/04-building\_with\_PHP/_includes/NOTES.md_
+^ _examples/04-building_with_PHP/\_includes/NOTES.md_
 
 ---
 
@@ -458,7 +456,7 @@ function redirect_to($new_location) {
 redirect_to("basic.html");
 ```
 
-^  Instead of trying to remember the syntax here I find it really helpful to wrap all of this up into a function. So, let's create a function for ourselves. We'll call it `redirect_to`, and it's going to take as an argument new location. Now we can save this in our _functions.php_ file and have access to it throughout our entire project, and we don't have to remember the header syntax every time we want to use it.
+^ Instead of trying to remember the syntax here I find it really helpful to wrap all of this up into a function. So, let's create a function for ourselves. We'll call it `redirect_to`, and it's going to take as an argument new location. Now we can save this in our _functions.php_ file and have access to it throughout our entire project, and we don't have to remember the header syntax every time we want to use it.
 
 ---
 
@@ -470,7 +468,7 @@ $logged_in = $_GET['logged_in'];
 if ($logged_in == 1) {
   redirect_to("basic.html");
 } else {
-  redirect_to("http://google.com");
+  redirect_to("https://google.com");
 }
 ```
 
@@ -478,7 +476,7 @@ if ($logged_in == 1) {
 
 ^ If they are logged in, we're going to let them see basic.html. If they are not logged in, let's redirect them to somewhere else like google.com
 
-^ _examples/04-building\_with\_PHP/redirect/redirect.php_
+^ _examples/04-building_with_PHP/redirect/redirect.php_
 
 ^ redirect.php?logged_in=1
 
@@ -494,11 +492,11 @@ if ($logged_in == 1) {
 
 ## Data Input
 
-| Type | Method |
-|:----:|:------:|
-| URLs / Links | GET |
-| Forms | POST |
-| Cookies | COOKIE |
+|     Type     | Method |
+| :----------: | :----: |
+| URLs / Links |  GET   |
+|    Forms     |  POST  |
+|   Cookies    | COOKIE |
 
 ^ This represents the second way that we can get data back from a user. They can either click a link, or type a URL, which is basically the same thing. Or they can submit a web form to us. You remember that URL and links are GET requests, and submitting a form is going to be a POST request. With GET request we saw that PHP automatically took all of the query parameters and put them into an associated array assigned to the super global GET. PHP is going to do the exact same thing for us with POST request by using the super global POST.
 
@@ -508,7 +506,7 @@ if ($logged_in == 1) {
 
 ^ That's the dollar sign, underscore followed by capitals POST. All the values posted in the form data will be in that associative array, ready for us to access, just like we did with the links. So, if a form has a first name input field, then we'll be able to ask the POST super global for the key that matches the input field name. When we submit forms, there's generally going to be two pages, one page which has the web form on it, ready to be filled out. And then, a second page that does the processing of the form. Let's trying building an example.
 
-^ _examples/04-building\_with\_PHP/forms/form.php_
+^ _examples/04-building_with_PHP/forms/form.php_
 
 ---
 
@@ -521,7 +519,7 @@ if ($logged_in == 1) {
 
 ^ We don't have to have two pages for the process either. In some cases you may want to have a single page that contains both the form and the form processing; essentially we'll have a form that submits to itself. One of the benefits is that all of the logic related to the form is in one file (_click_). It also makes it easy to re-display the form if there are errors (_click_). So let's say we had a login form, if there are errors logging in we can easily return those error messages, and repopulate the form with the values the user previously entered.
 
-^ _examples/04-building\_with\_PHP/forms/form\_single-01.php_
+^ _examples/04-building_with_PHP/forms/form_single-01.php_
 
 ---
 
@@ -673,7 +671,7 @@ if (!in_array($value, $set)) {
 
 ^ For inclusion within a set, we have a value and then we have an array and we're going to check if our `$value` appears anywhere within that array. So we can use the `in_array` function, we'll actually check if our value is NOT in the array, and if it's not our validation will fail.
 
- ---
+---
 
 ### Format
 
@@ -689,7 +687,7 @@ if (preg_match("/PHP/", "PHP is fun.")) {
 
 ^ Now, for format, I want to teach you a new function. It's a little bit of a high-level function, but it's very useful. And it's `preg_match`. And what we're doing is we're applying a regular expression to see if something matches. So here's the format. We provide a regular expression and the subject we want to match, and it returns true whether it matches or not. So in this example I'm going to match whether "PHP" is inside "PHP is fun". And it will either say match was found or match was not found. You have to supply the expression you're searching for inside the slashes.
 
- ---
+---
 
 ### Format
 

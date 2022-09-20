@@ -96,7 +96,7 @@ theme: Work, 1
 
 ^ Can we still use PHP to build this project? Can we use MySQL? Should we use something else?
 
-^ I can tell you in this example, (_click_) we definitely can still use PHP, and we may even use MySQL. Can anyone tell me how? Let's examine the data from the client. (_examples/07-data\_types/data.xlsx_)
+^ I can tell you in this example, (_click_) we definitely can still use PHP, and we may even use MySQL. Can anyone tell me how? Let's examine the data from the client. (_examples/07-data_types/data.xlsx_)
 
 ---
 
@@ -157,10 +157,10 @@ theme: Work, 1
 
 ```json
 {
-  "categories":[
+  "categories": [
     {
-      "question":"Category 1: Acceptable Forms of Identification",
-      "answers":[
+      "question": "Category 1: Acceptable Forms of Identification",
+      "answers": [
         "Driver's license",
         "Government identification card",
         "U.S. Armed Forces' identification card"
@@ -199,7 +199,7 @@ $json_source = "data.json";
 $json = file_get_contents($json_source, 0, null, null);
 ```
 
-[file\_get\_contents](http://php.net/manual/en/function.file-get-contents.php)
+[file_get_contents](https://php.net/manual/en/function.file-get-contents.php)
 
 ^ PHP has many built in functions. We can't possible cover them all in ten weeks. It's important to always think critically when you have a problem and see if there's a function that can assist. If not, then you build your own function. In this case, PHP has a function `file_get_contents` that reads the entire contents of a file into a string. So basically, the variable `$json` now contains all the information in the JSON file.
 
@@ -213,7 +213,7 @@ $json = file_get_contents($json_source, 0, null, null);
 $json_output = json_decode($json);
 ```
 
-[json_decode](http://php.net/manual/en/function.json-decode.php)
+[json_decode](https://php.net/manual/en/function.json-decode.php)
 
 ^ Next, we take advantage of the `json_decode` function, which takes a JSON encoded string and converts it into a PHP variable. We now have all of the JSON data stored in a PHP variable that we can traverse and manipulate as needed.
 
@@ -236,7 +236,7 @@ if (!file_exists($dir))
   mkdir($dir, 0755, true);
 ```
 
-[mkdir](http://php.net/manual/en/function.mkdir.php)
+[mkdir](https://php.net/manual/en/function.mkdir.php)
 
 ^ The `mkdir` function attempts to create the directory specified by pathname. So if this folder doesn't exist, we're going to create it. All the parameters listed there are outlined on php.net.
 
@@ -246,10 +246,10 @@ if (!file_exists($dir))
 
 ```json
 {
-  "categories":[
+  "categories": [
     {
-      "question":"Category 1: Acceptable Forms of Identification",
-      "answers":[
+      "question": "Category 1: Acceptable Forms of Identification",
+      "answers": [
         "Driver's license",
         "Government identification card",
         "U.S. Armed Forces' identification card"
@@ -346,9 +346,9 @@ fwrite($file, $output);
 fclose($file);
 ```
 
-- [fopen](http://php.net/manual/en/function.fopen.php)
-- [fwrite](http://php.net/manual/en/function.fwrite.php)
-- [fclose](http://php.net/manual/en/function.fclose.php)
+- [fopen](https://php.net/manual/en/function.fopen.php)
+- [fwrite](https://php.net/manual/en/function.fwrite.php)
+- [fclose](https://php.net/manual/en/function.fclose.php)
 
 ^ Now we have the output for one of the questions with all of the available options. Before we loop through to the next category, we need to create an HTML file with this structure and data.
 
@@ -365,13 +365,14 @@ fclose($file);
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  <title>Categories Game</title>
-  <link rel="stylesheet" href="screen.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Categories Game</title>
+    <link rel="stylesheet" href="screen.css" />
+  </head>
+  <body></body>
+</html>
 ```
 
 ^ Before we write the files - we have to make sure we're actually generating valid HTML. We're going to need to style the pages, and add javascript for functionality enhancements. What we deliver to the client has to look like it was actually coded by hand from scratch, be total valid and progressively enhanced. PHP and JSON are just tools we're using to automate the process. So we're going to need a valid HTML document, starting with our normal page head.
@@ -385,7 +386,7 @@ $head = 'includes/_head.php';
 $output = file_get_contents($head);
 ```
 
-- [file\_get\_contents](http://php.net/manual/en/function.file-get-contents.php)
+- [file_get_contents](https://php.net/manual/en/function.file-get-contents.php)
 
 ^ So we can store our partial, _head_ content in a file. When we're building a PHP application, we can _include_ partials into our code using the `include` and `require` functions. In this case, we want to do something similar, but we actually want to take the contents of our _head_ partial and add them to our final HTML output. We can use the `file\_get\_contents` function to do just that.
 
@@ -649,8 +650,8 @@ $output .= file_get_contents($footer);
 
 ```javascript
 var xhr = new XMLHttpRequest(),
-    method = 'GET',
-    url = 'app/bin/gen.php';
+  method = "GET",
+  url = "app/bin/gen.php";
 ```
 
 ^ With AJAX you can setup an HTTP request that targets our `gen.php` script. So basically we want to push a button and run the script on the server, without having to refresh the page we're on. We want the script to run in the background, asynchronously, and report back to us when done. Here we're setting up the global variables we'll need. We do all of this with Javascript and PHP.
@@ -660,8 +661,8 @@ var xhr = new XMLHttpRequest(),
 ## AJAX Request
 
 ```javascript
-const button = document.getElementById('btnSubmit');
-button.addEventListener('click', generateFiles, false);
+const button = document.getElementById("btnSubmit");
+button.addEventListener("click", generateFiles, false);
 ```
 
 ^ Our button event listener, calling a function `generateFiles`.
@@ -674,7 +675,7 @@ button.addEventListener('click', generateFiles, false);
 function generateFiles(event) {
   event.preventDefault();
   xhr.open(method, url, true);
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = function () {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
       console.log(xhr.responseText);
     }

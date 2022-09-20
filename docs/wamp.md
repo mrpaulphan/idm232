@@ -1,6 +1,6 @@
 # WAMP
 
-[http://www.wampserver.com/en/](http://www.wampserver.com/en/)
+[https://www.wampserver.com/en/](https://www.wampserver.com/en/)
 
 ## Installation
 
@@ -12,11 +12,11 @@
 
 - The _www_ directory will be automatically created (usually `c:\wamp\www`)
 - Create a subdirectory in _www_ and put your PHP files inside.
-- Click on the _localhost_ link in the WampSever menu or open your internet browser and go to the URL: `http://localhost`
+- Click on the _localhost_ link in the WampSever menu or open your internet browser and go to the URL: `https://localhost`
 
 ## Notes
 
-You'll remember that Wamp is an abbreviation. Which stands for Windows, Apache, MySQL, and PHP. And together that's what we refer to as the stack that we'll be running, the stack of technology that we'll be using. And Windows of course, we already have. So what we're really downloading is the A, M, and the P. The Apache, MySQL, and PHP as part of the WampServer package. And you can download the installer for that package from the WampServer website, which is [http://wampserver.com/en/](http://wampserver.com/en/).
+You'll remember that Wamp is an abbreviation. Which stands for Windows, Apache, MySQL, and PHP. And together that's what we refer to as the stack that we'll be running, the stack of technology that we'll be using. And Windows of course, we already have. So what we're really downloading is the A, M, and the P. The Apache, MySQL, and PHP as part of the WampServer package. And you can download the installer for that package from the WampServer website, which is [https://wampserver.com/en/](https://wampserver.com/en/).
 
 That final en is there for the English language version of the site. If you don't put that then by default you're on the French language version. They may redesign this website from time to time, don't let that throw you. What we want to find are the download links, the download area. And right now, there's several different packages here that we can choose for downloading. That's referring to the architecture of your computer's processor. If you don't know which one you have, then you can go to your Control Panel and you can go to System and Security, and under System, it will tell you.
 
@@ -34,6 +34,6 @@ And then we're at the end. So, that's great. We're all done and I'm going to lea
 
 Now if it's green, that means that it is successfully online. That it is working if it's orange it tried to go online and it failed. Something blocked it. If it's red that means turned off line and you need to start or stop the different services here. You can test to make sure that it is in fact working by going to local host. And that will open up the default browser that we just told Wamp about. And it will give us this information. If you see this page, then it means that it was able to connect to Apache and to bring up this default information.
 
-![](http://digm.drexel.edu/crs/IDM232/presentations/images/wampserver-screenshot-01.png)
+![](https://digm.drexel.edu/crs/IDM232/presentations/images/wampserver-screenshot-01.png)
 
 And there's some other good links here. One of these is PHP info. If we click on that, we now know that PHP is working as well. So we know that Apache's working. And we know that PHP is working, because we're able to see all this information about PHP on the PHP info page. It's a good way to check and make sure if it's green, you can see Apache, and you can see PHP, then you know you're probably in good shape on the WAMP side.

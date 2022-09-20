@@ -46,7 +46,7 @@ theme: Work, 1
 
 ---
 
-![fill](http://digm.drexel.edu/crs/IDM232/presentations/images/spreadsheet.png)
+![fill](https://digm.drexel.edu/crs/IDM232/presentations/images/spreadsheet.png)
 
 ^ If you've never worked with a database before chances are that you have worked with a spreadsheet like Microsoft Excel. And you've seen people put data in there, that's not just numbers that they're adding up. They will put columns like first name and last name and so on. A database is similar to this in that it has columns and rows that are populated with data.
 
@@ -101,7 +101,7 @@ theme: Work, 1
 
 - Column
   - Set of data of a single simple type
-  - Examples: first\_name, last\_name, email, password
+  - Examples: first_name, last_name, email, password
   - Columns have types: strings, integers, etc.
 
 ^ (_click_) Next we have column. A column is a set of data of a single simple type. We saw that in the spreadsheet example. So we have first name, last name, email password, and columns have types so we have certain kinds of data that goes in certain kinds of columns. So strings go into the strings columns, integers go into the integers column and so on.
@@ -166,7 +166,7 @@ theme: Work, 1
 
 ---
 
-![fit](http://digm.drexel.edu/crs/IDM232/presentations/images/mysql-login.png)
+![fit](https://digm.drexel.edu/crs/IDM232/presentations/images/mysql-login.png)
 
 ^ Option 1 is to use the command line. We can log in with our system terminal to our mysql installation, and from there, create databases, tables, columns etc. We can go through the CRUD process and manage everything for our databases this way. It's probably the best way to manage the databases because of the level of control you get, but we don't have enough time to learn how to use the command line in this class. This is another example as to why learning how to use the terminal is really a benefit to you as a developer. GIT, MySql, workflow - everything can be done from the command line with supreme control. If you want to be a top level developer, you'll want to spend time learning how to use the command line.
 
@@ -180,13 +180,13 @@ theme: Work, 1
 
 ---
 
-![fit](http://digm.drexel.edu/crs/IDM232/presentations/images/mamp-startpage-01.png)
+![fit](https://digm.drexel.edu/crs/IDM232/presentations/images/mamp-startpage-01.png)
 
 ^ The welcome page includes default server information for logging into MySQL on your local system. Unless you specifically change the username or password, they will both be set to `root` by default. Root users have maximum accessibility to the system.
 
 ---
 
-![fit](http://digm.drexel.edu/crs/IDM232/presentations/images/mamp-startpage-02.png)
+![fit](https://digm.drexel.edu/crs/IDM232/presentations/images/mamp-startpage-02.png)
 
 ^ There are also basic PHP examples for setting up connections to our databases. These examples are using the basic `myslq` connect syntax in PHP, where we will be using the newer `mysqli` (i for improved).
 
@@ -229,7 +229,7 @@ CREATE TABLE `db_name`.`table_name` (
 
 ^ create a table
 
-^ review data types [http://www.w3schools.com/sql/sql_datatypes.asp](http://www.w3schools.com/sql/sql_datatypes.asp)
+^ review data types [https://www.w3schools.com/sql/sql_datatypes.asp](https://www.w3schools.com/sql/sql_datatypes.asp)
 
 ---
 
@@ -664,7 +664,7 @@ mysqli_free_result($result);
 
 ^ Let's build an example and see these functions in action. (_examples/week5/databases.php_)
 
-^ Let's look at examples of these techniques (_examples/week5/databases\_retrieval.php_)
+^ Let's look at examples of these techniques (_examples/week5/databases_retrieval.php_)
 
 ---
 
@@ -672,7 +672,7 @@ mysqli_free_result($result);
 
 ^ We have learned how to read data from the database. The process for creating updating and deleting records is going to be very similar with a few key differences. The most important difference is just that when we do a select, we're expecting to get back rows of data as a result. Either that or an empty set with no rows. But still we're expecting a resource result to come back to us that we then parse through. With insert, update, and delete, we're not expecting to get any data back. We're just affecting a change on the database either inserting a row, deleting a row or updating a record in place. So it just returns true or false to us for whether it succeeded or whether it failed.
 
-^ (_exercises/week5/databases\_insert.php_)
+^ (_exercises/week5/databases_insert.php_)
 
 ---
 
@@ -680,9 +680,9 @@ mysqli_free_result($result);
 
 ^ Updating and dealing records from PHP is going to be very similar to the insert process that we just saw in the last example. However there are two important differences, let's take a look.
 
-^ (_examples/week5/databases\_update.php_)
+^ (_examples/week5/databases_update.php_)
 
-^ (_examples/week5/databases\_delete.php_)
+^ (_examples/week5/databases_delete.php_)
 
 ---
 

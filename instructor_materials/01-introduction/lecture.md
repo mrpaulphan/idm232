@@ -11,6 +11,7 @@ theme: Ostrich, 1
 ## Week 1
 
 ### Overview
+
 - Introduction
 - About this Course
 
@@ -18,22 +19,25 @@ theme: Ostrich, 1
 
 ## Paul Phan | @MrPaulPhan
 
-
-![inline](./../assets/images/avatar.png)
+![inline](./../../assets/images/avatar.png)
 
 - Schedule a meeting: [calendar](https://calendly.com/mr-paulphan)
 - Email: [paul.phan@drexel.edu](mailto:paul.phan@drexel.edu)
 
 ---
-![inline fill](./../assets/images/drexel.png)![inline fill](./../assets/images/baseball.png)
+
+![inline fill](./../../assets/images/drexel.png)![inline fill](./../../assets/images/baseball.png)
 
 ---
-![inline](./../assets/images/hc_logo.png)
+
+![inline](./../../assets/images/hc_logo.png)
+
 ## Technical Lead / Full Stack Developer @HappyCog
 
 ---
 
-![inline fill](./../assets/images/koda_01.jpeg)![inline fill](./../assets/images/koda_02.jpeg)![inline fill](./../assets/images/koda_03.jpeg)
+![inline fill](./../../assets/images/koda_01.jpeg)![inline fill](./../../assets/images/koda_02.jpeg)![inline fill](./../../assets/images/koda_03.jpeg)
+
 ## The PomFather @KodaTheMerlePom
 
 ---
@@ -107,12 +111,15 @@ theme: Ostrich, 1
 ^ (click) We'll need a text editor, and obviously (click) a browser.
 
 ---
+
 ## How Does a server side work?
-![inline](./../assets/images/server_side.png)
+
+![inline](./../../assets/images/server_side.png)
 
 ---
 
 ## Apache, MySql, PHP Apps
+
 - LAMP
 - MAMP
 - WAMP
@@ -136,7 +143,7 @@ $$ XAMP = (L|M|W)+Apache+MySQL+PHP $$
 
 ## MAMP Installation
 
-![inline](./../assets/images/mamp.png)
+![inline](./../../assets/images/mamp.png)
 
 [https://www.mamp.info/en/](https://www.mamp.info/en/)
 
@@ -215,7 +222,7 @@ $$ XAMP = (L|M|W)+Apache+MySQL+PHP $$
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/amazon.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/amazon.png)
 
 ^ One of the most powerful aspects of PHP is it's ability to output dynamic text. PHP can grab content from a database and display it so that and HTML page can show different users different content, (think Amazon). We're going to start looking a how we can output dynamic text first by simply outputting a few words. From here, we'll be able to pull things from the database and build more elaborate stuff.
 
@@ -227,7 +234,7 @@ $$ XAMP = (L|M|W)+Apache+MySQL+PHP $$
 <?php echo "Hello World"; ?>
 ```
 
-^ To start with, we're going to learn probably the most important PHP you'll need to know, the `echo` command. Echo is going to turn whatever we to say, back to the user, like an echo. Think of it like printing to the user's browser.  So here's an example, we have the opening PHP tags, a space and then inside quotes, Hello World, a semicolon and then the closing PHP tag. That will send to the user's browser a embed on the page of _Hello World_ with no quotes. (example)
+^ To start with, we're going to learn probably the most important PHP you'll need to know, the `echo` command. Echo is going to turn whatever we to say, back to the user, like an echo. Think of it like printing to the user's browser. So here's an example, we have the opening PHP tags, a space and then inside quotes, Hello World, a semicolon and then the closing PHP tag. That will send to the user's browser a embed on the page of _Hello World_ with no quotes. (example)
 
 ---
 
@@ -245,7 +252,7 @@ $$ XAMP = (L|M|W)+Apache+MySQL+PHP $$
 
 ```php
 <?php echo 2 + 3;  // 5 ?>
- ```
+```
 
 ^ PHP can work with numbers too, let's perform a simple math example and `echo` the result.
 
@@ -257,55 +264,55 @@ $$ XAMP = (L|M|W)+Apache+MySQL+PHP $$
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_01.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_01.png)
 
 ^ To start, we have our browser and then we have the web server.
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_02.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_02.png)
 
 ^ Our browser makes a request to the web server. That's when you type in the domain of the site (yourwebsite.com). It sends a request to yourwebsite.com. When we're working in our dev environment, that's going to be local host.
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_03.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_03.png)
 
 ^ On that web server software needs to be there to intercept that request, and we have a HTTP Daemon called _Apache_.
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_04.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_04.png)
 
-^ Apache  see's the request and says "oh, okay, I'm going to see if I have a file that will help me to respond to that request". It goes to the file system and looks for a file.
+^ Apache see's the request and says "oh, okay, I'm going to see if I have a file that will help me to respond to that request". It goes to the file system and looks for a file.
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_05.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_05.png)
 
 ^ Let's call that file `hello.php`. Apache grabs that file and then says "I see that it has .php at the end". There may be PHP here that needs process, Apache will do that.
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_06.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_06.png)
 
 ^ So it goes to process the PHP.
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_07.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_07.png)
 
 ^ In doing that, it may need to go back and forth to the database, store information in the database etc. All sorts of things can happen as it goes back and forth. But once it's done processing the PHP, there's one final step...
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_08.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_08.png)
 
 ^ where it assembles the HTML that's going to be returned and then...
 
 ---
 
-![inline](http://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_09.png)
+![inline](https://digm.drexel.edu/crs/IDM232/presentations/images/operation_trail-step_09.png)
 
 ^ it ships it back to the browser. It's important to have a firm grasp of this cycle right from the start.
 
