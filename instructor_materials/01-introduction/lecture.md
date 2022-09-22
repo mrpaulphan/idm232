@@ -33,9 +33,9 @@ theme: Ostrich, 1
 
 ---
 
-![inline](./../../assets/images/hc_logo.png)
+![inline](./../../assets/images/company.png)
 
-## Technical Lead / Full Stack Developer @HappyCog
+## Lead Software Engineer / Technical Lead @Newsela
 
 ---
 
