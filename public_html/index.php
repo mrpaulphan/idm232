@@ -1,10 +1,19 @@
-<?php
-include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/header.php';
-?>
-<div class="container">
-  <h1>Welcome to Jawn Clips</h1>
-  <p>Professionally cutting hair for over 100 years.</p>
-  <a href="<?php echo siteUrl('/appointments/create.php'); ?>"
-    class="btn btn-primary">Book an appointment</a>
-</div>
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/_global/footer.php';
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDM 232</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="01-variables">Week 01 - Variables</a></li>
+    </ul>
+    <nav>
+</body>
+
+</html>
