@@ -1,5 +1,4 @@
 <?php
-
 // Casing
 $item = 'Item';
 $Items = 'Items';
