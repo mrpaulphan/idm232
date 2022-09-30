@@ -21,39 +21,46 @@ echo '<br>';
 $x = 4820;
 echo $x; // 4820
 echo '<br>';
-
 var_dump($x);
 
 echo '<br>';
 $x = '4820';
 echo '<br>';
-
 var_dump($x);
 
+echo '<br>';
 $x = 10.365; // float
 var_dump($x);
 
-// Arrays
+echo '<br>';
 $favorite_car_brands = [
     'Volvo',
     'BMW',
-    'Toyota'
+    'Toyota',
+    0,
+    false,
+    2.34,
 ];
 var_dump($favorite_car_brands);
 
 // Concatenation
-$greeting = 'Hello';
-$target = 'World';
-$phrase = $greeting . $target;
-echo $phrase; // HelloWorld
+$first_name = 'Paul';
+$last_name = 'Phan';
+$full_name = $first_name . $last_name;
+echo $full_name; // PaulPhan
 
-$phrase = $greeting . ' ' . $target . '!';
-echo $phrase; // Hello World!
+$full_name = $first_name . ' ' . $last_name;
+echo $full_name; // Paul Phan
+
+$phrase = 'Hello my name is' . $first_name . ' ' . $last_name;
+echo $phrase; // Hello my name is Paul Phan
 
 // Quotes single vs double
-echo "$phrase Again<br>"; // Hello World! Again
+$phrase = 'Hello World';
 echo '$phrase Again<br>'; // $phrase Again
+echo "$phrase Again<br>"; // Hello World! Again
 echo $phrase . ' Again<br>'; // Hello World! Again
 
 echo "String's apostrophe"; // String's apostrophe
+// echo 'String's apostrophe';
 echo 'String\'s apostrophe';
