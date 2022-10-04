@@ -8,7 +8,12 @@ This page describes an assignment for this course. Due dates and submissions are
 
 - Setup a github repository for this class that lives out of `{path-to-project-folder}/public_html`.
 - This repo should contain a `final` folder with an `index.php` inside of it.
-- Inside this `index.php`, write php code that will output a string exactly with `Assignment - 01` on the page
+- Inside this `index.php`, complete the following:
+- Write basic html5 boilerplate code.
+- Create an variable and assign a string of `Assignment - 01` as it's value.
+- Create an `h1` tag within the body element and output that PHP variable in between the tags.
+- Break out the header and footer into it's own php files.
+- Using PHP, include the new header and footer files using the php `include`
 
 ## Server
 
@@ -20,7 +25,7 @@ This page describes an assignment for this course. Due dates and submissions are
 Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Assignment 01** Submission:
 
 1. A link to your GitHub repository (i.e. "idm232-abc123") containing the code for your project.
-2. A link to your example index.php page that displays `Assignment - 01` on the page.
+2. A link to your example index.php page that displays `Assignment - 01` on the page in an `h1`tag
 
 Example Submission
 
