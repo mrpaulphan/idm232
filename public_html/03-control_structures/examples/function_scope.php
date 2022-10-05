@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Function Scope</title>
 </head>
+
 <body>
   <?php
-    $bar = "outside"; // global scope
+    $bar = 'outside'; // global scope
 
-    function foo() {
+  function bar()
+  {
+      $bar = 'inside';
+      echo $bar;
+  }
+  function foo()
+  {
       global $bar;     // declare `$bar` as global
-      $bar = "inside"; // local scope
-    }
+      echo $bar; // outside
+  }
 
-    echo "1: " . $bar . "<br>";
-    foo();
-    echo "2: " . $bar . "<br>";
+  $count = 0;
+  function counter()
+  {
+      global $count;     // declare `$bar` as global
+      $count++;
+  }
+
+  function newCounter($count)
+  {
+      $count = 'hello ur a string now';
+  }
+
+  newCounter($count);
   ?>
 </body>
+
 </html>
