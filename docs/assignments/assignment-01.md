@@ -19,7 +19,7 @@ This page describes an assignment for this course. Due dates and submissions are
 
 - Create a folder on your server called `idm232`. Inside of there, you should copy your github repo into that folder (This would be everything inside your `public_html`folder)
 - If you did that correct, you should be able to visit `https://{your-domain-dot-com}/idm232/final`. This should load the index.php work you did above
-  ![alt text](http://url/to/img.png)
+  ![alt text](https://github.com/mrpaulphan/idm232/blob/a6cfdbd9b0ec4e4fe74891f99ad3634db053b618/assets/images/hosting_structure.png)
 
 ## Submitting the Assignment
 
