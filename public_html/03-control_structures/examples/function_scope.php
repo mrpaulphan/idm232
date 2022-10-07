@@ -8,13 +8,23 @@
 
 <body>
   <?php
+
     $bar = 'outside'; // global scope
+  echo $bar; // outside
 
   function bar()
   {
       $bar = 'inside';
-      echo $bar;
+      echo $bar; // inside
   }
+
+  function passBar($outside_variable)
+  {
+      echo $outside_variable; // inside
+  }
+
+  passBar($bar);
+
   function foo()
   {
       global $bar;     // declare `$bar` as global

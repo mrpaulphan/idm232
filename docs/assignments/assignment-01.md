@@ -9,16 +9,17 @@ This page describes an assignment for this course. Due dates and submissions are
 - Setup a github repository for this class that lives out of `{path-to-project-folder}/public_html`.
 - This repo should contain a `final` folder with an `index.php` inside of it.
 - Inside this `index.php`, complete the following:
-- Write basic html5 boilerplate code.
-- Create an variable and assign a string of `Assignment - 01` as it's value.
-- Create an `h1` tag within the body element and output that PHP variable in between the tags.
-- Break out the header and footer into it's own php files.
-- Using PHP, include the new header and footer files using the php `include`
+  - Write basic html5 boilerplate code.
+  - Create an variable and assign a string of `Assignment - 01` as it's value.
+  - Create an `h1` tag within the body element and output that PHP variable in between the tags.
+  - Break out the header and footer into it's own php files.
+  - Using PHP, include the new header and footer files using the php `include_once`
 
 ## Server
 
 - Create a folder on your server called `idm232`. Inside of there, you should copy your github repo into that folder (This would be everything inside your `public_html`folder)
 - If you did that correct, you should be able to visit `https://{your-domain-dot-com}/idm232/final`. This should load the index.php work you did above
+  ![alt text](http://url/to/img.png)
 
 ## Submitting the Assignment
 

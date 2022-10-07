@@ -1,7 +1,4 @@
 <?php include_once 'components/header.php'; ?>
-
-<?php $name = 'Paul Phan'; ?>
-<h1>Welcome <?php echo $name; ?>
-</h1>
-
+<?php $title = 'My IDM 232 Final'; ?>
+<h1><?php echo $title; ?></h1>
 <?php include_once 'components/footer.php';
