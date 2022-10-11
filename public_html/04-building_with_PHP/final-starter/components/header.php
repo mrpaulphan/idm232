@@ -1,11 +1,3 @@
-<?php
-// Create Document Title
-if (!isset($page_title)) {
-    $page_title = '🚨 Missing title';
-}
-$site_name = 'My IDM 232 Final';
-$document_title = $page_title . ' | ' . $site_name;
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +8,7 @@ $document_title = $page_title . ' | ' . $site_name;
   <!-- Including TailwindCss Library -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="dist/styles/style.css">
-  <title><?php $document_title; ?>
+  <title>Page Title Here
   </title>
 </head>
 
