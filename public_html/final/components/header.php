@@ -30,8 +30,7 @@ $document_title = $page_title . ' | ' . $site_name;
 
       <nav class="text-white flex items-center">
         <a href="#" class="p-4 inline-block">Home</a>
-        <a href="#" class="p-4 inline-block">Book</a>
-        <a href="#" class="p-4 inline-block">Contact</a>
+        <a href="#" class="p-4 inline-block">Book Appointment</a>
         <nav>
     </div>
   </header>
