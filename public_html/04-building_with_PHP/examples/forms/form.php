@@ -8,21 +8,6 @@
     body {
       font: 100%/1.5 sans-serif;
     }
-
-    form {
-      height: 6.25rem;
-      width: 6.25rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-    }
-
-    .control {
-      margin-bottom: 1rem;
-    }
   </style>
 </head>
 
@@ -32,14 +17,39 @@
 
   <form action="path-to-file-OR-full-URL-to-file" method="either-POST-or-GET-defaults-to-GET">
 
-
   </form>
 
   <!-- https://www.w3schools.com/tags/tag_input.asp -->
-  <form action="">
+  <form action="" method="GET">
 
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" value="" id="firstName">
+    <br>
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" value="" id="lastName">
+    <br>
 
+    <label for="password">Password</label>
+    <input type="password" name="password" value="" id="password">
+
+    <input type="submit" value="Submit">
   </form>
+  <br><br><br><br>
+  <hr>
+  <form action="process.php" method="POST">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" value="" id="firstName">
+    <br>
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" value="" id="lastName">
+    <br>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" value="" id="password">
+
+    <input type="submit" value="Submit">
+  </form>
+
 
 
 
@@ -51,17 +61,6 @@
   If we click submit, the form is submitted to `form_processing.php` (which doesn't exist yet). Let's build that page. (form_processing.php)
   -->
 
-  <form action="form_processing.php" method="post">
-    <div class="control">
-      <label for="username">Username:</label>
-      <input type="text" name="username" value="">
-    </div>
-    <div class="control">
-      <label for="password">Password:</label>
-      <input type="password" name="password" value="">
-    </div>
-    <input type="submit" name="submit" value="Submit">
-  </form>
 </body>
 
 </html>
