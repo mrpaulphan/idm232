@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Form</title>
@@ -7,19 +8,40 @@
     body {
       font: 100%/1.5 sans-serif;
     }
+
     form {
       height: 6.25rem;
       width: 6.25rem;
       position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       margin: auto;
     }
+
     .control {
       margin-bottom: 1rem;
     }
   </style>
 </head>
+
 <body>
+
+  <!-- https://www.w3schools.com/tags/att_form_method.asp -->
+
+  <form action="path-to-file-OR-full-URL-to-file" method="either-POST-or-GET-defaults-to-GET">
+
+
+  </form>
+
+  <!-- https://www.w3schools.com/tags/tag_input.asp -->
+  <form action="">
+
+
+  </form>
+
+
 
   <!--
   So I've got my form with its action, which is form_processing.php. That's the page that doesn't exist yet, but it's where we're going to send this data, so this is going to post the data to form_processing.php. And the method that it will use is post, and that's common, and we're going to do that with almost all forms, send them as post data.
@@ -42,4 +64,5 @@
   </form>
 
 </body>
+
 </html>
