@@ -1,3 +1,14 @@
+<?php
+// Check if $page_name does not exist, if not, set it to default message
+if (!isset($page_name)) {
+    $page_name = '🚨 MISSING TITLE 🚨';
+}
+
+$site_name = 'IDM 232';
+$document_title = $page_name . ' | ' . $site_name;
+// Home | IDM 232
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +19,8 @@
   <!-- Including TailwindCss Library -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="dist/styles/style.css">
-  <title>Home - IDM 232</title>
+  <title><?php echo $document_title; ?>
+  </title>
 </head>
 
 <body>

@@ -1,4 +1,7 @@
-<?php include_once 'components/header.php'; ?>
+<?php
+$page_name = 'Home';
+include_once 'components/header.php';
+?>
 <div class="mx-auto my-16 max-w-7xl px-4">
   <div class="text-center">
     <h1 class=" font-bold tracking-tight text-gray-900  text-6xl">
