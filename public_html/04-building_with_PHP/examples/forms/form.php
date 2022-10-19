@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <title>Form</title>
   <style media="screen">
-    body {
-      font: 100%/1.5 sans-serif;
-    }
+  body {
+    font: 100%/1.5 sans-serif;
+  }
   </style>
 </head>
 
@@ -19,11 +19,24 @@
 
   </form>
 
+
   <!-- https://www.w3schools.com/tags/tag_input.asp -->
   <form action="" method="GET">
+    <?php
+    echo '<pre>';
+    var_dump($_GET);
+    echo '</pre>';
 
+    if (isset($_GET['first_name'])) {
+        // First Name Exist
+        echo $_GET['first_name'];
+    }
+    ?>
+
+    <br>
     <label for="firstName">First Name</label>
-    <input type="text" name="firstName" value="" id="firstName">
+    <input type="text" name="firstName" value="<?php echo $_GET['firstName']; ?>" id="firstName"
+      placeholder="first name">
     <br>
     <label for="lastName">Last Name</label>
     <input type="text" name="lastName" value="" id="lastName">
@@ -38,12 +51,11 @@
   <hr>
   <form action="process.php" method="POST">
     <label for="firstName">First Name</label>
-    <input type="text" name="firstName" value="" id="firstName">
+    <input type="text" name="first_name" value="" id="firstName">
     <br>
     <label for="lastName">Last Name</label>
-    <input type="text" name="lastName" value="" id="lastName">
+    <input type="text" name="last_name" value="" id="lastName">
     <br>
-
     <label for="password">Password</label>
     <input type="password" name="password" value="" id="password">
 

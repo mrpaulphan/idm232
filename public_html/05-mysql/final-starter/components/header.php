@@ -1,10 +1,12 @@
 <?php
-// if page title variable doesn't exist, create a default one
-if (!isset($page_title)) {
-    $page_title = '🚨 Missing Title 🚨';
+// Check if $page_name does not exist, if not, set it to default message
+if (!isset($page_name)) {
+    $page_name = '🚨 MISSING TITLE 🚨';
 }
-$site_title = 'JAWN Clips';
-$document_title = $page_title . ' | ' . $site_title;
+
+$site_name = 'IDM 232';
+$document_title = $page_name . ' | ' . $site_name;
+// Home | IDM 232
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +19,7 @@ $document_title = $page_title . ' | ' . $site_title;
   <!-- Including TailwindCss Library -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="dist/styles/style.css">
-  <title><?php echo $document_title ; ?>
+  <title><?php echo $document_title; ?>
   </title>
 </head>
 
@@ -31,8 +33,7 @@ $document_title = $page_title . ' | ' . $site_title;
 
       <nav class="text-white flex items-center">
         <a href="#" class="p-4 inline-block">Home</a>
-        <a href="#" class="p-4 inline-block">Book</a>
-        <a href="#" class="p-4 inline-block">Contact</a>
+        <a href="#" class="p-4 inline-block">Book Appointment</a>
         <nav>
     </div>
   </header>
