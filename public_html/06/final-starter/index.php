@@ -13,8 +13,27 @@
         ' (' . mysqli_connect_errno() . ')'
       );
   }
+
+  //  Read the data from the database form the users table
+  $query = 'SELECT * FROM users';
+  $result = mysqli_query($connection, $query);
+
+  // Check there are no errors with our SQL statement
+  if (!$result) {
+      die('Database query failed.');
+  }
+
+  while ($user = mysqli_fetch_array($result)) {
+      // echo '<pre>';
+      // var_dump($user);
+      // echo '</pre>';
+      echo '<h2>' . $user['first_name'] . ' ' . $user['last_name'] . '</h2>';
+      echo '<hr>';
+  }
+
   $page_title = 'Home';
   include_once 'components/header.php';
+
   ?>
 
 <div class="mx-auto my-16 max-w-7xl px-4">

@@ -14,16 +14,10 @@ Design and create an HTML based version of your final project pages. The functio
 You do not have to create every single page for the entire final project. Instead you should be focused on building at least one template for every style of page your final project will need. Examples:
 
 User Screens
-- Home Screen
-- Category listing screen
-- Recipe Detail Screen
-- Search Results
 
-Admin Screens
--  View all Recipes Screen
--  Add Recipe Screen
--  Edit Recipe Screen
--  Delete Recipe Screen
+- Global Header
+- Global Footer
+- Recipe Detail Page
 
 ## Submitting the Assignment
 
@@ -32,4 +26,11 @@ Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) u
 1. A link to your self hosted prototype page. From this page, I can fully engage the project and have access to all supplementary pages and functions.
 1. A link to your GitHub repository (i.e. "idm232-abc123") containing the code for your project.
 
-**Late submissions receive zero points.**
+Example Submission
+
+```
+Github Repo: https://github.com/mrpaulphan/idm232
+Recipe Detail Page: https://mrpaulphan.com/idm232/final
+```
+
+**Please double check your work and make sure all links are working before submitting. Broken links will cause you to lose points. Late submissions receive zero points.**
