@@ -24,8 +24,8 @@
   }
 
   while ($user = mysqli_fetch_array($result)) {
-      echo '<h2>' . $user['first_name'] . ' ' . $user['last_name'] . '</h2>';
-      echo '<hr>';
+      // echo '<h2>' . $user['first_name'] . ' ' . $user['last_name'] . '</h2>';
+      // echo '<hr>';
   }
 
   $page_title = 'Home';
