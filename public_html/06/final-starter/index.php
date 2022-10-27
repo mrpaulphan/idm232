@@ -24,16 +24,12 @@
   }
 
   while ($user = mysqli_fetch_array($result)) {
-      // echo '<pre>';
-      // var_dump($user);
-      // echo '</pre>';
-      echo '<h2>' . $user['first_name'] . ' ' . $user['last_name'] . '</h2>';
-      echo '<hr>';
+      // echo '<h2>' . $user['first_name'] . ' ' . $user['last_name'] . '</h2>';
+      // echo '<hr>';
   }
 
   $page_title = 'Home';
   include_once 'components/header.php';
-
   ?>
 
 <div class="mx-auto my-16 max-w-7xl px-4">
