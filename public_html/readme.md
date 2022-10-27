@@ -4,6 +4,8 @@
 
 ## Getting Started
 
+- Copy `config.example.php` to `config.production.php`
+
 ### Server Requirements
 
 - PHP 7.4
