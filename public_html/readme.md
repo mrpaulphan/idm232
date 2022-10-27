@@ -5,6 +5,8 @@
 ## Getting Started
 
 - Copy `config.example.php` to `config.production.php`
+- Create a database on your server
+- Import the backup database
 
 ### Server Requirements
 
