@@ -23,5 +23,6 @@ $document_title = $page_title . ' | ' . $site_title;
 </head>
 
 <body>
-  <?php include project_path() . '/components/main-navigation.php'; ?>
+  <!-- Main Content Begins -->
+  <?php include 'components/navigation-main.php'; ?>
   <main class="h-full	">

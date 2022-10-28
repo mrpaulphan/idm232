@@ -1,1 +1,2 @@
-public_html/final/.env
+# Files I don't want to see on github
+public_html/final/.env.php
