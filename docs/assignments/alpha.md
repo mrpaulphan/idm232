@@ -14,10 +14,7 @@ Design and create an HTML based version of your final project pages. The functio
 You do not have to create every single page for the entire final project. Instead you should be focused on building at least one template for every style of page your final project will need. Examples:
 
 User Screens
-
-- Global Header
-- Global Footer
-- Recipe Detail Page
+- Recipe Detail Page (Includes Global Header and Global Footer)
 
 ## Submitting the Assignment
 
