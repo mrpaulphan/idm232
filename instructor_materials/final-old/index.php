@@ -1,10 +1,9 @@
 <?php
 
-include_once __DIR__ . '/app.php';
+include_once 'app.php';
 $page_title = 'Home';
-include_once __DIR__ . '/_components/header.php';
+include_once 'components/header.php';
 ?>
-
 
 <div class="mx-auto my-16 max-w-7xl px-4">
   <div class="text-center">
@@ -35,5 +34,15 @@ include_once __DIR__ . '/_components/header.php';
   </form>
 </div>
 
+<?php
+// get users data from database
+$query = 'SELECT * FROM users';
+$result = mysqli_query($db_connection, $query);
+while ($user = mysqli_fetch_array($result)) {
+    echo '<h2>' . $user['first_name'] . ' ' . $user['last_name'] . ' ' . $user['email'] . ' ' . $user['phone'] . '</h2>';
+    echo '<hr>';
+}
 
-<?php include_once __DIR__ . '/_components/footer.php';
+?>
+
+<?php include_once 'components/footer.php';

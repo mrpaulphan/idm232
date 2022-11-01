@@ -1,8 +1,8 @@
 <?php
 $APP_CONFIG = [
-    'environment' => 'production', // development, production
-    'site_name' => 'Jawn Clips',
-    'site_url' => 'https://mrpaulphan.com/idm232/final',
+    'environment' => 'replace me', // development or production
+    'site_name' => 'replace me',
+    'site_url' => 'url to your project homepage',
     'database_host' => 'localhost',
     'database_user' => 'some-user-name',
     'database_pass' => 'some-password',

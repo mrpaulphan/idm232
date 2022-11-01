@@ -28,7 +28,6 @@ $main_navigation = [
     <nav class="text-white flex items-center">
       <?php
       foreach ($main_navigation as $nav_item) {
-          // <a href="#" class="p-4 inline-block">Home</a>
           echo '<a href="' . $nav_item['url'] . '" class="p-4 inline-block">' . $nav_item['title'] . '</a>';
       }
 ?>
