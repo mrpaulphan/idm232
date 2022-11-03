@@ -19,5 +19,8 @@ $result = mysqli_query($db_connection, $query);
 
 // Check there are no errors with our SQL statement
 if ($result) {
+    redirect_to('/admin/users');
 } else {
+    $error_message = 'Could Not Create User';
+    redirect_to('/admin/users?error=' . $error_message);
 }

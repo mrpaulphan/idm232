@@ -21,6 +21,12 @@ $result = mysqli_query($db_connection, $query);
         <h1 class="text-xl font-semibold text-gray-900">Users</h1>
         <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email
           and role.</p>
+        <?php
+          if (isset($_GET['error'])) {
+              echo "<p class='text-red-500'>Error: " . $_GET['error'] . '</p>';
+          }
+
+?>
       </div>
       <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
         <button type="button"
