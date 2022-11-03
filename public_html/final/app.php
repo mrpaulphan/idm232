@@ -7,7 +7,7 @@
 // An array of values that will determine if you're working locally or on a production server.
 // @link https://stackoverflow.com/questions/2053245/how-can-i-detect-if-the-user-is-on-localhost-in-php
 $whitelist_host = ['127.0.0.1', '::1'];
-if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
+if (in_array($_SERVER['REMOTE_ADDR'], $whitelist_host)) {
     // You are in the Local environment. Pull in the correct .env file.
     if (file_exists(__DIR__ . '/.env.local.php')) {
         include_once __DIR__ . '/.env.local.php';
