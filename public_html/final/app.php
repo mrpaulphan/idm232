@@ -4,13 +4,25 @@
  * logic for the application.
  */
 
-// check if .env.php exists
-if (file_exists(__DIR__ . '/.env.php')) {
-    // holds global variables for the entire application
-    include_once __DIR__ . '/.env.php';
+// An array of values that will determine if you're working locally or on a production server.
+// @link https://stackoverflow.com/questions/2053245/how-can-i-detect-if-the-user-is-on-localhost-in-php
+$whitelist_host = ['127.0.0.1', '::1'];
+if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
+    // You are in the Local environment. Pull in the correct .env file.
+    if (file_exists(__DIR__ . '/.env.local.php')) {
+        include_once __DIR__ . '/.env.local.php';
+    } else {
+        die('Please make sure you have a .env.local.php file');
+    }
 } else {
-    // if the file does not exist, throw an error
-    die('Please copy the .env.example.php file to .env.php and update the values');
+    // You are in the Production environment. Pull in the correct .env file.
+    if (file_exists(__DIR__ . '/.env.production.php')) {
+        // holds global variables for the entire application
+        include_once __DIR__ . '/.env.production.php';
+    } else {
+        // if the file does not exist, throw an error
+        die('Please make sure you have a .env.production.php file');
+    }
 }
 
 // Include the database connection. Order matters and should always be first

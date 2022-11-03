@@ -21,11 +21,18 @@ $result = mysqli_query($db_connection, $query);
         <h1 class="text-xl font-semibold text-gray-900">Users</h1>
         <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email
           and role.</p>
+        <?php
+          if (isset($_GET['error'])) {
+              echo "<p class='text-red-500'>Error: " . $_GET['error'] . '</p>';
+          }
+
+?>
       </div>
       <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
         <button type="button"
-          class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto">Add
-          user</button>
+          class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto">
+          <a href="<?php echo site_url() . '/admin/users/create.php' ?>">
+            Add user</a></button>
       </div>
     </div>
     <div class="mt-8 flex flex-col">
@@ -47,17 +54,18 @@ $result = mysqli_query($db_connection, $query);
               </thead>
               <tbody class="divide-y divide-gray-200 bg-white">
                 <?php
-              while ($user = mysqli_fetch_array($result)) {
-                  echo "<tr>
+    while ($user = mysqli_fetch_array($result)) {
+        echo "<tr>
                 <td class='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>{$user['id']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['first_name']} {$user['last_name']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['email']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['phone']}</td>
                 <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
-                  <a href='#' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
+                  <a href='http://localhost:8888/final/admin/users/edit.php?id={$user['id']}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
+                  <a href='http://localhost:8888/final/admin/users/delete.php?id={$user['id']}' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
                 </td>
               </tr>";
-              }
+    }
 ?>
               </tbody>
             </table>
