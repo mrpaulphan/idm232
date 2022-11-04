@@ -1,5 +1,4 @@
 <?php
-
 include_once __DIR__ . '/../../app.php';
 $page_title = 'Users';
 include_once __DIR__ . '/../../_components/header.php';
@@ -21,6 +20,13 @@ $result = mysqli_query($db_connection, $query);
         <h1 class="text-xl font-semibold text-gray-900">Users</h1>
         <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email
           and role.</p>
+        <?php
+        // If error query param exist, show error message
+          if (isset($_GET['error'])) {
+              echo '<p class="text-red-500">' . $_GET['error'] . '</p>';
+          }
+
+?>
       </div>
       <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
         <button type="button"
@@ -55,8 +61,8 @@ $result = mysqli_query($db_connection, $query);
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['email']}</td>
                 <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$user['phone']}</td>
                 <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
-                  <a href='http://localhost:8888/final/admin/users/edit.php?id={$user['id']}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
-                  <a href='http://localhost:8888/final/admin/users/delete.php?id={$user['id']}' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
+                  <a href='http://localhost:8888/final/admin/users/edit.php}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
+                  <a href='http://localhost:8888/final/admin/users/delete.php}' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
                 </td>
               </tr>";
     }
