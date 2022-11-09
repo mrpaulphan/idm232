@@ -11,11 +11,12 @@ $last_name_value = $_POST['last_name'];
 $email_value = $_POST['email'];
 $phone_value = $_POST['phone'];
 
-// Create a SQL statement to insert the data into the database
-$query = "INSERT INTO users (first_name, last_name, password, email, phone) VALUES ('$first_name_value', '$last_name_value', 'password', '$email_value', '$phone_value')";
-
-// Run the SQL statement
-$result = mysqli_query($db_connection, $query);
+$result = add_user(
+    $first_name_value,
+    $last_name_value,
+    $email_value,
+    $phone_value
+);
 
 // Check there are no errors with our SQL statement
 if ($result) {
