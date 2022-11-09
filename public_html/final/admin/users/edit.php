@@ -42,8 +42,6 @@ if ($result->num_rows > 0) {
                 <input class="border-black border-2" type="text" name="last_name"
                   value="<?php echo $user['last_name']?>">
               </div>
-
-
               <div class=" block">
                 <label for="">Email</label>
                 <input class="border-black border-2" type="email" name="email" value="<?php echo $user['email']?>">
