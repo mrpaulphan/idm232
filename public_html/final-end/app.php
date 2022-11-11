@@ -28,3 +28,5 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist_host)) {
 // Include the database connection. Order matters and should always be first
 include_once __DIR__ . '/_includes/database.php';
 include_once __DIR__ . '/_includes/helper-functions.php';
+include_once __DIR__ . '/_includes/users-functions.php';
+include_once __DIR__ . '/_includes/services-functions.php';

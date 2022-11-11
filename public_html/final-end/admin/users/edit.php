@@ -33,26 +33,26 @@ if ($result->num_rows > 0) {
             <form action="<?php echo site_url(); ?>/_includes/process-edit-users.php" method="POST">
               <div class="block">
                 <label for="">First Name</label>
-                <input class="border-black border-2" type="text" name="first_name" value="">
+                <input class="border-black border-2" type="text" name="first_name"
+                  value="<?php echo $user['first_name']?>">
               </div>
 
               <div class="block">
                 <label for="">Last Name</label>
-                <input class="border-black border-2" type="text" name="last_name" value="">
+                <input class="border-black border-2" type="text" name="last_name"
+                  value="<?php echo $user['last_name']?>">
               </div>
-
-
               <div class=" block">
                 <label for="">Email</label>
-                <input class="border-black border-2" type="email" name="email" value="">
+                <input class="border-black border-2" type="email" name="email" value="<?php echo $user['email']?>">
               </div>
               <div class=" block">
                 <label for="">Phone Number</label>
-                <input class="border-black border-2" type="text" name="phone" value="">
+                <input class="border-black border-2" type="text" name="phone" value="<?php echo $user['phone']?>">
               </div>
               <input class=" nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4
                   py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2
-                  focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto" type="submit" value="">
+                  focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto" type="submit" value="Submit">
 
               <input type="hidden" name="id" value="">
             </form>
