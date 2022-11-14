@@ -31,7 +31,6 @@ function add_user($first_name, $last_name, $email, $phone)
 
 /**
  * Get user by id
- *
  * @param integer $id
  * @return Array or false
  */

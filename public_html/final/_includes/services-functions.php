@@ -16,3 +16,42 @@ function add_services($name, $price, $description)
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
+
+function get_services()
+{
+    global $db_connection;
+    $query = 'SELECT * FROM services';
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
+
+function get_service_by_id($id)
+{
+    global $db_connection;
+    $query = "SELECT * FROM services WHERE id = $id";
+    $result = mysqli_query($db_connection, $query);
+    if ($result->num_rows > 0) {
+        $service = mysqli_fetch_assoc($result);
+        return $service;
+    } else {
+        return false;
+    }
+}
+
+function edit_service($name, $price, $description, $id)
+{
+    global $db_connection;
+    $query = 'UPDATE services';
+    $query .= " SET name = '{$name}', price = '{$price}', description = '{$description}'";
+    $query .= " WHERE id = $id";
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
+
+function delete_service_by_id($id)
+{
+    global $db_connection;
+    $query = "DELETE FROM services WHERE id = $id";
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
