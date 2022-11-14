@@ -36,7 +36,7 @@ Additional techniques, including, but not limited to the following may be used a
 
 ## Project Asset Files
 
-[Download asset files](https://cdn.philsinatra.com/idm/IDM232-assets.zip)
+[Download asset files](http://cdn.philsinatra.com/idm/IDM232-assets.zip)
 
 ## Project Requirements
 
@@ -53,7 +53,7 @@ The following outline lists the requirements for successfully completing the fin
 ### **User Pages**
 
 - [ ] Home/Landing
-- [ ] Category listing screen ( that list a group of recipes by a specific category)
+- [ ] Recipe listing screen (List all recipes on a page in alphabetical order by title name)
 - [ ] Recipe Detail
   - [ ] Has featured Image
 - [ ] Search Results
@@ -62,7 +62,6 @@ The following outline lists the requirements for successfully completing the fin
 
 - [ ] Recipe Listing (List all 40 recipes)
 - [ ] Create Recipe
-  - [ ] Ability to upload a photo
 - [ ] Recipe Detail
 - [ ] Edit Recipe
 - [ ] Delete Recipe
