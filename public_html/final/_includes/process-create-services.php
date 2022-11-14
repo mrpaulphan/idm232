@@ -16,6 +16,6 @@ $result = add_services($name, $price, $description);
 if ($result) {
     redirect_to('/admin/services');
 } else {
-    $error_message = 'Sorry there was an error creating the user';
+    $error_message = 'Sorry there was an error creating the user: ' . mysqli_error($db_connection);
     redirect_to('/admin/services?error=' . $error_message);
 }

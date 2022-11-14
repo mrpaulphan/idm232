@@ -1,15 +1,7 @@
 <?php
-
 include_once __DIR__ . '/../../app.php';
 $page_title = 'Create Users';
 include_once __DIR__ . '/../../_components/header.php';
-?>
-
-<?php
-// get users data from database
-$query = 'SELECT * FROM users';
-$result = mysqli_query($db_connection, $query);
-
 ?>
 
 <div class="mx-auto my-16 max-w-7xl px-4">
@@ -23,7 +15,9 @@ $result = mysqli_query($db_connection, $query);
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
           <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-            <form action="<?php echo site_url(); ?>/_includes/process-create-users.php" method="POST">
+            <form
+              action="<?php echo site_url(); ?>/_includes/process-create-users.php"
+              method="POST">
               <div class="block">
                 <label for="">First Name</label>
                 <input class="border-black border-2" type="text" name="first_name">
@@ -53,7 +47,5 @@ $result = mysqli_query($db_connection, $query);
     </div>
   </div>
 </div>
-
-
 
 <?php include_once __DIR__ . '/../../_components/footer.php';

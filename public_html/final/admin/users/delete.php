@@ -6,9 +6,7 @@ if (isset($_GET['id'])) {
     die('ID is needed in URL');
 }
 
-// get users data from database
-$query = "DELETE FROM users WHERE id = {$id}";
-$result = mysqli_query($db_connection, $query);
+$result = delete_user_by_id($id);
 
 // Check there are no errors with our SQL statement
 if ($result) {

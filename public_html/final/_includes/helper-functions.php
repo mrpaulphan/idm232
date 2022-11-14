@@ -2,7 +2,6 @@
 /**
  * This file will hold all the functions for your project.
  */
-
 function get_project_path()
 {
     global $APP_CONFIG;
