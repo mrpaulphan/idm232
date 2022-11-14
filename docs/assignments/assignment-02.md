@@ -8,9 +8,9 @@ This assignment is strictly functionality. No CSS is required for this assignmen
 
 ### Requirements
 
-- Create a screen with a form where you can add all the required fields needed for a recipe and store it in your recipe table.
-- Create a screen that will fetch all of the recipes from the database. It does not need to output every column. It just needs to display data in some way.
-- Create a screen that will allow you to edit existing information from a database and modify
+- Create a screen (create recipe page) with a form where you can add all the required fields needed for a recipe and store it in your recipe table.
+- Create a screen (list recipes page) that will fetch all of the recipes from the database. It does not need to output every column. It just needs to display data in some way.
+- Create a screen (edit existing recipe page) that will allow you to edit existing recipe from a database and modify it.
 - Upload your up to date code to github
 - Push your code to production (Bluehost)
 
@@ -24,10 +24,10 @@ Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) u
 Example Submission
 
 ```
-Github Repo: https://githubc.com/mrpaulphan/idm232
-Add a recipe: https://mrpaulphan.com/create.php
-Edit a recipe: https://mrpaulphan.com/create.php
-View all recipes: https://mrpaulphan.com/list.php
+Github Repo: {link-to-your-project repo}
+Add a recipe: {link-to-your-example}
+Edit a recipe: {link-to-your-example}
+View all recipes: {link-to-your-example}
 
 ```
 
