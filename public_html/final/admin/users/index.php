@@ -29,7 +29,6 @@ $users = get_users();
       </div>
     </div>
     <br>
-    <?php include __DIR__ . '/../../_components/search-bar.php'; ?>
     <br>
     <div class="mt-8 flex flex-col">
       <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">

@@ -51,3 +51,14 @@ function getFormattedDateTime()
 {
     return  date('Y-m-d H:i:s');
 }
+
+/**
+ * Escape special characters in strings:
+ * @link - https://www.w3schools.com/php/func_mysqli_real_escape_string.asp
+ * @return string - The current page URL
+ */
+function sanitize_value($value)
+{
+    global $db_connection;
+    return mysqli_real_escape_string($db_connection, $value);
+}

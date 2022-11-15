@@ -79,3 +79,16 @@ function edit_user($first_name_value, $last_name_value, $email_value, $phone_val
     $result = mysqli_query($db_connection, $query);
     return   $result;
 }
+
+function get_user_by_email_and_password($email, $password)
+{
+    global $db_connection;
+    $query = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+    $result = mysqli_query($db_connection, $query);
+    if ($result->num_rows > 0) {
+        $user = mysqli_fetch_assoc($result);
+        return $user;
+    } else {
+        return false;
+    }
+}

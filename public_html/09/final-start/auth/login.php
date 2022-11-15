@@ -14,7 +14,7 @@ include_once __DIR__ . '/../_components/header.php';
 
   <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
     <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-      <form class="space-y-6" action="#" method="POST">
+      <form class="space-y-6" action="<?php echo site_url() . '/_includes/process-login.php' ?>" method="POST">
         <div>
           <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
           <div class="mt-1">

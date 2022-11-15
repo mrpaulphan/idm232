@@ -3,6 +3,9 @@
  * This file is used store all the business
  * logic for the application.
  */
+// Starting session
+// Learn more here https://www.tutorialrepublic.com/php-tutorial/php-sessions.php
+session_start();
 
 // An array of values that will determine if you're working locally or on a production server.
 // @link https://stackoverflow.com/questions/2053245/how-can-i-detect-if-the-user-is-on-localhost-in-php
