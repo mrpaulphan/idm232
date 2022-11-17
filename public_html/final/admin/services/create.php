@@ -30,7 +30,11 @@ $result = mysqli_query($db_connection, $query);
               </div>
               <div class="block">
                 <label for="">Price</label>
-                <input class="border-black border-2" type="number" name="price">
+                <input class="border-black border-2" type="number" name="price" required>
+              </div>
+              <div class="block">
+                <label for="">Image Path</label>
+                <input class="border-black border-2" type="text" name="image_path">
               </div>
               <div class="block">
                 <label for="">description</label>

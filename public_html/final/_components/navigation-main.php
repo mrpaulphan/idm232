@@ -30,5 +30,11 @@ $main_navigation = [
 ?>
 
     </nav>
+    <?php
+    if (isset($_SESSION['user'])) {
+        echo 'Hello,' . $_SESSION['user']['first_name'];
+    }
+?>
+
   </div>
 </header>

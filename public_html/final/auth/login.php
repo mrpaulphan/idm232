@@ -1,4 +1,9 @@
 <?php
+// echo '<pre>';
+// var_dump($_SESSION);
+// echo '</pre>';
+// die;
+
 include __DIR__ . '/../app.php';
 $page_title = 'Login';
 include_once __DIR__ . '/../_components/header.php';
@@ -18,7 +23,7 @@ include_once __DIR__ . '/../_components/header.php';
         <div>
           <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
           <div class="mt-1">
-            <input id="email" name="email" type="email" autocomplete="email" required
+            <input id="email" name="email" type="text" autocomplete="email" required
               class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
           </div>
         </div>

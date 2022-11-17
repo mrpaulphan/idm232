@@ -9,8 +9,9 @@ if (!$_POST) {
 $name = $_POST['name'];
 $price = $_POST['price'];
 $description = $_POST['description'];
+$image_path = $_POST['image_path'];
 
-$result = add_services($name, $price, $description);
+$result = add_services($name, $price, $description, $image_path);
 
 // Check there are no errors with our SQL statement
 if ($result) {

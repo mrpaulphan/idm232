@@ -13,6 +13,11 @@ $users = get_users();
         <h1 class="text-xl font-semibold text-gray-900">Users</h1>
         <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email
           and role.</p>
+        <form action="<?php echo site_url(); ?>/admin/search" method="GET">
+          <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+
         <?php
         // If error query param exist, show error message
           if (isset($_GET['error'])) {

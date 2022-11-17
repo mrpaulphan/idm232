@@ -7,12 +7,12 @@
  * @param  string $price - service price of the service
  * @return object - mysqli_result
  */
-function add_services($name, $price, $description)
+function add_services($name, $price, $description, $image_path)
 {
     global $db_connection;
     $query = 'INSERT INTO services';
-    $query .= ' (name, price, description)';
-    $query .= " VALUES ('$name', '$price', '$description')";
+    $query .= ' (name, price, description, image_path)';
+    $query .= " VALUES ('$name', '$price', '$description', '$image_path')";
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
