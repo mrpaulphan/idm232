@@ -28,7 +28,9 @@ function site_url()
  */
 function redirect_to($path)
 {
-    header('Location: ' . site_url() . $path);
+    $full_url = site_url() . $path;
+    header('Location: ' . $full_url);
+    ob_end_flush();
     exit;
 }
 
