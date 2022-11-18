@@ -26,4 +26,6 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
 
 <body>
   <!-- Main Content Begins -->
-  <?php include __DIR__ . '/navigation-main.php'; ?>
+  <?php
+        include __DIR__ . '/navigation-main.php';
+?>

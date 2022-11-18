@@ -6,7 +6,7 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$first_name_value = $_POST['first_name'];
+$first_name_value = sanitize_value($_POST['first_name']);
 $last_name_value = $_POST['last_name'];
 $email_value = $_POST['email'];
 $phone_value = $_POST['phone'];

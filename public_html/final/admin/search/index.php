@@ -17,8 +17,9 @@ $query .= " WHERE first_name LIKE '%{$search}%'";
 $query .= " OR last_name LIKE '%{$search}%'";
 $query .= " OR email LIKE '%{$search}%'";
 $query .= " OR phone LIKE '%{$search}%'";
-
 $results = mysqli_query($db_connection, $query);
+
+// Check if was have more than 0 results from db
 if ($results->num_rows > 0) {
     $users_results = true;
 } else {
@@ -60,6 +61,7 @@ if ($results->num_rows > 0) {
     </div>
 
     <?php
+    // If we have results, show them
       if ($users_results) {
           while ($users_results = mysqli_fetch_assoc($results)) {
               echo '<div class="flex flex-row justify-center items-center">';

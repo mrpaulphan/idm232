@@ -23,11 +23,11 @@ function add_user($first_name, $last_name, $email, $phone)
 {
     global $db_connection;
     $default_password = 'idm232';
-    $password = password_hash($default_password, PASSWORD_DEFAULT);
+    $hashed_password = password_hash($default_password, PASSWORD_DEFAULT);
 
     $query = 'INSERT INTO users';
     $query .= ' (first_name, last_name, password, email, phone)';
-    $query .= " VALUES ('{$first_name}', '{$last_name}', '{$password}', '{$email}', '{$phone}')";
+    $query .= " VALUES ('{$first_name}', '{$last_name}', '{$hashed_password}', '{$email}', '{$phone}')";
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
@@ -97,10 +97,11 @@ function get_user_by_email_and_password($email, $password)
     global $db_connection;
     $query = "SELECT * FROM users WHERE email = '$email'";
     $result = mysqli_query($db_connection, $query);
+
     if ($result->num_rows > 0) {
         $user = mysqli_fetch_assoc($result);
-        $existing_password = $user['password'];
-        $isPasswordCorrect = password_verify($password, $existing_password);
+        $existing_hashed_password = $user['password'];
+        $isPasswordCorrect = password_verify($password, $existing_hashed_password);
         if ($isPasswordCorrect) {
             return $user;
         } else {

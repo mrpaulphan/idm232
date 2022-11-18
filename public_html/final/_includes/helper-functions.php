@@ -62,3 +62,8 @@ function sanitize_value($value)
     global $db_connection;
     return mysqli_real_escape_string($db_connection, $value);
 }
+
+function is_user_logged_in()
+{
+    return isset($_SESSION['user']);
+}
