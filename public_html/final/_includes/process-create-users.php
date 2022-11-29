@@ -7,9 +7,9 @@ if (!$_POST) {
 
 // Store $_POST data to variables for readability
 $first_name_value = sanitize_value($_POST['first_name']);
-$last_name_value = $_POST['last_name'];
-$email_value = $_POST['email'];
-$phone_value = $_POST['phone'];
+$last_name_value = sanitize_value($_POST['last_name']);
+$email_value = sanitize_value($_POST['email']);
+$phone_value = sanitize_value($_POST['phone']);
 
 $result = add_user($first_name_value, $last_name_value, $email_value, $phone_value);
 

@@ -43,14 +43,38 @@ Additional techniques, including, but not limited to the following may be used a
 The following outline lists the requirements for successfully completing the final project.
 
 - [ ] All projects must be programmed from scratch using PHP/MySQL as the primary programming and data manipulation languages. Use of online content management systems (Wordpress, WIX, Squarespace etc.) is completely prohibited.
-- [ ] All projects must be self hosted.
-- [ ] Source code must be tracked throughout the duration of the project using GitHub.
-- [ ] All data must be stored and served from a MySQL database, running on the live web server.
-- [ ] Projects must include all of the provided recipes, not a subset. Link [here](https://drive.google.com/drive/folders/1B4o77Gl6lyK6w42cNrLs1UeedZez3v2z?usp=sharing). One image per recipe is required.
-- [ ] All sites must be fully responsive, from a range of small to large (smart phone to desktop monitor).
-- [ ] Completed [Case study assignment](https://github.com/mrpaulphan/idm232/blob/0def798a1d199036f9266d621881d433c61b2e5d/docs/assignments/case-study.md)
 
-### **User Pages**
+- [ ] All projects must be self hosted.
+- [ ] Most up to date code is stored on github.
+- [ ] All data must be stored and served from a MySQL database, running on the live web server.
+- [ ] Projects must include **all** of the provided recipes, not a subset, unless told otherwise. Link [here](https://drive.google.com/drive/folders/1B4o77Gl6lyK6w42cNrLs1UeedZez3v2z?usp=sharing). One image per recipe is required.
+- [ ] All sites must be fully responsive, from a range of small to large (smart phone to desktop monitor).
+
+### **Global (9 points)**
+
+- [] All submitted pages must have zero **errors** or **warnings** when live URL is ran through an HTML Validator. Please use [validator.w3.org](https://validator.w3.org/#validate_by_uri+with_options)
+- [] Minimum of 40 unique recipes/entries
+- [] All elements that hve an attribute of .`href`, `src`, `action`etc, should be a full absolute url.
+  `href="<?php echo site_url(); ?>/dist/styles/style.css"`
+- [] Every submitted page has a unique document title
+- [] favicon is included
+- [] Every value coming from a form is sanitized and cleaned using the `sanitize_value()` function from `helper_function.php`
+
+  Example
+
+```
+$first_name_value = sanitize_value($_POST['first_name']);
+$last_name_value = sanitize_value($_POST['last_name']);
+$email_value = sanitize_value($_POST['email']);
+$phone_value = sanitize_value($_POST['phone']);
+```
+
+### **Case Study (5 points)**
+
+- [ ] Completed [Case study assignment](https://github.com/mrpaulphan/idm232/blob/0def798a1d199036f9266d621881d433c61b2e5d/docs/assignments/case-study.md)
+- The case study can be a PDF and does NOT have to be built with HTML/CSS.
+
+### **User Pages (18 Points)**
 
 - [ ] Home/Landing
 - [ ] Recipe listing screen (List all recipes on a page in alphabetical order by title name)
@@ -58,7 +82,7 @@ The following outline lists the requirements for successfully completing the fin
   - [ ] Has featured Image
 - [ ] Search Results
 
-### **Admin Pages**
+### **Admin Pages (18 Points)**
 
 - [ ] Recipe Listing (List all 40 recipes)
 - [ ] Create Recipe
@@ -73,6 +97,7 @@ The following outline lists the requirements for successfully completing the fin
   - Create a demo account for me to login with
     - email = `paul.phan@drexel.edu`
     - password = `idm232`
+  - Password must be stored in the database using `password_hash`
   - An example of content changing if you're logged in
     - Could be layout changes, text changes, permissions, or navigation changes.
 
@@ -117,9 +142,9 @@ This project is worth 50 points.
 All links should be working valid links. This is just example/dummy content
 
 ```
-Github Repo: https://github.com/mrpaulphan/idm232/tree/master/public_html
-Database Export: https://github.com/mrpaulphan/idm232/tree/master/public_html/sql
-Case Study: https://github.com/mrpaulphan/idm232/tree/master/public_html/{uri-to-example}
+Github Repo: {link-to-github-project-repo}
+Database Export: {link-to-file-in-repo}
+Case Study: {link-to-file-in-repo}
 
 Home Page: {link-to-example}
 Category Listing Page: {link-to-example}
@@ -134,4 +159,8 @@ Admin Recipe Delete: {link-to-example/directions}
 
 Extra Credit
 {insert any extra features you added here}
+```
+
+```
+
 ```

@@ -26,12 +26,10 @@ $main_navigation = [
       <?php
       foreach ($main_navigation as $nav_item) {
           echo '<a href="' . $nav_item['url'] . '" class="p-4 inline-block">' . $nav_item['title'] . '</a>';
-      }
-?>
-
+      }?>
     </nav>
     <?php
-    if (isset($_SESSION['user'])) {
+    if (is_user_logged_in()) {
         echo 'Hello,' . $_SESSION['user']['first_name'];
     }
 ?>
