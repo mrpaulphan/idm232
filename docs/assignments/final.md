@@ -54,6 +54,7 @@ The following outline lists the requirements for successfully completing the fin
 
 - [] All submitted pages must have zero **errors** or **warnings** when live URL is ran through an HTML Validator. Please use [validator.w3.org](https://validator.w3.org/#validate_by_uri+with_options)
 - [] Minimum of 40 unique recipes/entries
+- [] Codebase does not contain any debugging logs such as `print_r()` or `var_dump()` in your code.
 - [] All elements that hve an attribute of .`href`, `src`, `action`etc, should be a full absolute url.
   `href="<?php echo site_url(); ?>/dist/styles/style.css"`
 - [] Every submitted page has a unique document title
