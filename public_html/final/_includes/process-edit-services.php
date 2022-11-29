@@ -6,10 +6,10 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$name_value = $_POST['name'];
-$price_value = $_POST['price'];
-$description_value = $_POST['description'];
-$id_value = $_POST['id'];
+$name_value = sanitize_value($_POST['name']);
+$price_value = sanitize_value($_POST['price']);
+$description_value = sanitize_value($_POST['description']);
+$id_value = sanitize_value($_POST['id']);
 
 $result = edit_service($name_value, $price_value, $description_value, $id_value);
 

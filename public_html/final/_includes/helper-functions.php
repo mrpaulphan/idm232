@@ -29,8 +29,9 @@ function site_url()
 function redirect_to($path)
 {
     $full_url = site_url() . $path;
-    header('Location: ' . $full_url);
-    ob_end_flush();
+    // Bluehost doesn't like when you use header() to redirect so we'll use JS instead
+    // header('Location: ' . $full_url);
+    echo "<script>window.location = '$full_url';</script>";
     exit;
 }
 

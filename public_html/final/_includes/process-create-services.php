@@ -6,10 +6,10 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$name = $_POST['name'];
-$price = $_POST['price'];
-$description = $_POST['description'];
-$image_path = $_POST['image_path'];
+$name = sanitize_value($_POST['name']);
+$price = sanitize_value($_POST['price']);
+$description = sanitize_value($_POST['description']);
+$image_path = sanitize_value($_POST['image_path']);
 
 $result = add_services($name, $price, $description, $image_path);
 

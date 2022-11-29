@@ -1,7 +1,10 @@
 <?php
   function redirect_to($new_location)
   {
-      header("Location: {$new_location}");
+      // header("Location: {$new_location}");
+      echo "<script>
+      window.location = 'http://www.example.com/newlocation';
+  </script>";
       exit;
   }
 
