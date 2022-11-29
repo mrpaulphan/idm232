@@ -87,7 +87,6 @@ $phone_value = sanitize_value($_POST['phone']);
 
 - [ ] Recipe Listing (List all 40 recipes)
 - [ ] Create Recipe
-- [ ] Recipe Detail
 - [ ] Edit Recipe
 - [ ] Delete Recipe
 
@@ -154,7 +153,6 @@ Search Results Page: {link-to-example}
 
 Admin Recipe Listing: {link-to-example}
 Admin Recipe Create: {link-to-example}
-Admin Recipe Detail: {link-to-example}
 Admin Recipe Edit: {link-to-example}
 Admin Recipe Delete: {link-to-example/directions}
 
