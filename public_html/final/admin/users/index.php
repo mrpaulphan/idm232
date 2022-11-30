@@ -1,8 +1,5 @@
 <?php
 include_once __DIR__ . '/../../app.php';
-if (!is_user_logged_in()) {
-    redirect_to('/');
-}
 $page_title = 'Users';
 include_once __DIR__ . '/../../_components/header.php';
 $users = get_users();

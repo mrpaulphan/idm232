@@ -33,3 +33,11 @@ include_once __DIR__ . '/_includes/database.php';
 include_once __DIR__ . '/_includes/helper-functions.php';
 include_once __DIR__ . '/_includes/users-functions.php';
 include_once __DIR__ . '/_includes/services-functions.php';
+
+// Check if URL has "/admin" in it. We can assume that if it does,
+// we're in the admin area and the user needs to be logged in
+if (strpos($_SERVER['REQUEST_URI'], '/admin') !== false) {
+    if (!is_user_logged_in()) {
+        redirect_to('/auth/login.php');
+    }
+}
