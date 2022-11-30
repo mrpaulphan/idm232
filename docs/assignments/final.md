@@ -36,7 +36,7 @@ Additional techniques, including, but not limited to the following may be used a
 
 ## Project Asset Files
 
-[Download asset files](http://cdn.philsinatra.com/idm/IDM232-assets.zip)
+[Download asset files](https://github.com/mrpaulphan/idm232/tree/master/docs/assignments/final_assets/recipes)
 
 ## Project Requirements
 
@@ -47,7 +47,7 @@ The following outline lists the requirements for successfully completing the fin
 - [ ] All projects must be self hosted.
 - [ ] Most up to date code is stored on github.
 - [ ] All data must be stored and served from a MySQL database, running on the live web server.
-- [ ] Projects must include **all** of the provided recipes, not a subset, unless told otherwise. Link [here](https://drive.google.com/drive/folders/1B4o77Gl6lyK6w42cNrLs1UeedZez3v2z?usp=sharing). One image per recipe is required.
+- [ ] Projects must include **all** of the provided recipes, not a subset, unless told otherwise. Link [here](https://github.com/mrpaulphan/idm232/tree/master/docs/assignments/final_assets/recipes). One image per recipe is required.
 - [ ] All sites must be fully responsive, from a range of small to large (smart phone to desktop monitor).
 
 ### **Global (9 points)**
