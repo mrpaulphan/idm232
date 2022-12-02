@@ -147,7 +147,7 @@ Database Export: {link-to-file-in-repo}
 Case Study: {link-to-file-in-repo}
 
 Home Page: {link-to-example}
-Category Listing Page: {link-to-example}
+Listing Page: {link-to-example}
 Recipe Detail Page: {link-to-example}
 Search Results Page: {link-to-example}
 
